@@ -1,0 +1,45 @@
+.range-calendar {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #555555;
+  padding: 4px 0 5px 0;
+}
+
+input[name="daterange"] {
+  border: none;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+#id-order-popup .range-calendar {
+  border: none;
+}
+
+.section-pagination-holder li {
+  cursor: pointer;
+}
+
+.documents .section-pagination-holder {
+  margin-top: 60px;
+}
+
+.valid {
+  border: solid 1px #dbe2e8;
+}
+
+.invalid {
+  border: solid 1px red !important;
+}
+
+.modal-show, .clickable {
+  cursor: pointer;
+}
+
+.button-offset {
+  margin: 30px 0 0 1px;
+}
+
+#id-redirect {
+  height: 380px;
+}

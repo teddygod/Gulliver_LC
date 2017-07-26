@@ -1,0 +1,8 @@
+.DS_STORE
+node_modules
+*~
+*.pyc
+static
+.grunt
+/package-lock.json
+.idea/
