@@ -1,0 +1,51 @@
+//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600);
+//@import url(https://gullivercenter.com/fonts/HeliosLight/HeliosLight.eot);
+//@import url(https://gullivercenter.com/fonts/HeliosLight/HeliosLight.woff);
+//@import url(https://gullivercenter.com/fonts/HeliosLight/HeliosLight.ttf);
+
+@font-face {
+  font-family: "HeliosLight";
+  src: url("//gullivercenter.com/fonts/HeliosLight/HeliosLight.eot");
+  src: url("//gullivercenter.com/fonts/HeliosLight/HeliosLight.eot?#iefix") format("embedded-opentype"), url("//gullivercenter.com/fonts/HeliosLight/HeliosLight.woff") format("woff"), url("//gullivercenter.com/fonts/HeliosLight/HeliosLight.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@import 'variables';
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+@import 'bootstrap/scss/mixins';
+@import '_common/_styles/mixins';
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	min-height: 100%;
+	font-family: 'HeliosLight', sans-serif;
+	color: $color-text;
+	overflow-x: hidden;
+}
+
+.main-wrapper {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+#ref {
+	.color-primary {
+		color: $color-primary;
+	}
+
+	.chart {
+		.color-primary {
+			color: $chart-color-primary;
+		}
+		.color-secondary {
+			color: $chart-color-secondary;
+		}
+	}
+}
