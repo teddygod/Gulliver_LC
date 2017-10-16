@@ -1,10 +1,10 @@
 {
-  "name": "modular-admin-html",
+  "name": "gulliver_lc",
   "version": "1.2.0",
   "description": "ModularAdmin: Free Dashboard Theme; html version",
   "repository": {
     "type": "git",
-    "url": "https://github.com/modularcode/modular-admin-html.git"
+    "url": "git+https://github.com/modularcode/modular-admin-html.git"
   },
   "author": "ModularCode",
   "license": "ISC",
@@ -13,6 +13,9 @@
   },
   "homepage": "https://github.com/modularcode/modular-admin-html",
   "dependencies": {
+    "bower": "^1.8.2",
+    "gulp-cli": "^1.4.0",
+    "gulp-install": "^1.1.0",
     "opencollective": "^1.0.3"
   },
   "devDependencies": {
@@ -49,5 +52,6 @@
     "type": "opencollective",
     "url": "https://opencollective.com/modular-admin-html",
     "logo": "https://opencollective.com/opencollective/logo.txt"
-  }
+  },
+  "main": "index.js"
 }

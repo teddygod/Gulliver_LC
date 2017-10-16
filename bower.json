@@ -1,5 +1,5 @@
 {
-  "name": "modular-admin-html",
+  "name": "Gulliver_LC",
   "version": "1.2.0",
   "devDependencies": {},
   "dependencies": {
@@ -39,7 +39,7 @@
         "./fonts/*"
       ]
     },
-    "font-icon": {
+    "font-icons": {
       "main": [
         "./css/font-awesome.css",
         "./fonts/*"

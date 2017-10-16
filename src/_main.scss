@@ -1,20 +1,15 @@
-//@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600);
-//@import url(https://gullivercenter.com/fonts/HeliosLight/HeliosLight.eot);
-//@import url(https://gullivercenter.com/fonts/HeliosLight/HeliosLight.woff);
-//@import url(https://gullivercenter.com/fonts/HeliosLight/HeliosLight.ttf);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,800,700,600);
 
-@font-face {
-  font-family: "HeliosLight";
-  src: url("//gullivercenter.com/fonts/HeliosLight/HeliosLight.eot");
-  src: url("//gullivercenter.com/fonts/HeliosLight/HeliosLight.eot?#iefix") format("embedded-opentype"), url("//gullivercenter.com/fonts/HeliosLight/HeliosLight.woff") format("woff"), url("//gullivercenter.com/fonts/HeliosLight/HeliosLight.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
 
 @import 'variables';
 @import 'bootstrap/scss/functions';
 @import 'bootstrap/scss/variables';
 @import 'bootstrap/scss/mixins';
 @import '_common/_styles/mixins';
+
+@import "app/gull";
+
+
 
 html,
 body {

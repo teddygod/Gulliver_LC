@@ -109,3 +109,10 @@ var bowerDir 		= config.bowerDir;
 		],
 		paths: rootDir
 	});
+
+/***********************************************
+*		 font files
+************************************************/
+
+
+exports.font = 	srcDir + "/fonts/*" ;

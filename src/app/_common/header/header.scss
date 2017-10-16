@@ -1,7 +1,7 @@
 .header {
 	background-color: #fff;
 	height: $header-height;
-	position: absolute;
+	position: fixed;
 	left: $sidebar-width;
 	right: 0;
 	transition: left 0.3s ease;
