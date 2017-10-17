@@ -1,0 +1,71 @@
+.table_filter{
+  //min-width: 100px;
+  border: none;
+  background: transparent;
+  &:focus{
+    outline: none;
+  }
+  option{
+    border: none;
+  }
+}
+.t_doc{
+  tr{
+    border-bottom: 1px solid #EAEEF0;
+    background-color: white;
+    transition: background-color 0.4s ease;
+    td{
+      font-size: 0.777rem;
+    }
+    &:hover{
+      background-color: #EAEEF0;
+    }
+  }
+  thead tr{
+    background: #EAEEF0;
+    th,th select{
+      font-weight: 300;
+      color: #4D4D4D;
+      font-size: 0.777rem;
+    }
+    //to compensate default select padding and make text in select and td properly aligned left
+    th select{
+      margin-left: -4px;
+    }
+    //for better mobile view
+    th:last-child{
+      min-height: 5.65rem;
+    }
+  }
+}
+.title{
+  font-weight: 400;
+  font-size: 1rem;
+  &-block{
+    border-bottom: none;
+  }
+}
+.t_doc tr td .doc_download_btn{
+  text-decoration: none;
+  padding: 5px;
+  span{
+    font-size: 0.777rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 4px;
+  }
+  .doc_download_btn_img{
+    width: 1.222rem;
+    height: 0.888rem;
+    background: url(/assets/download.png) no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &:hover{
+    .doc_download_btn_img{
+      background: url(/assets/download_yellow.png) no-repeat center;
+      background-size: cover;
+    }
+  }
+}
