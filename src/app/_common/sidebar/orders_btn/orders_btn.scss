@@ -16,4 +16,19 @@
   //width: $sidebar-width;
   width: 175px;
   margin: 0 auto 20px;
+  @include media-down(sm) {
+
+  }
+
+  .sidebar-open & {
+    @include media-down(md) {
+      left: 25px;
+    }
+  }
+
+  @include media-down(md) {
+    // position: absolute;
+    transition: left 0.3s ease;
+    left: -$sidebar-width;
+  }
 }
