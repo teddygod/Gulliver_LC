@@ -115,4 +115,16 @@ var bowerDir 		= config.bowerDir;
 ************************************************/
 
 
-exports.font = 	srcDir + "/fonts/*" ;
+exports.fonte = 	srcDir + "/fonts/*" ;
+
+/***********************************************
+ *		 image files
+ ************************************************/
+
+exports.imagen = 	srcDir + "/images/*" ;
+
+/***********************************************
+ *		 other files
+ ************************************************/
+
+exports.themp = 	srcDir + "/temp/*" ;

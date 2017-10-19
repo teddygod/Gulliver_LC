@@ -32,6 +32,20 @@
     //to compensate default select padding and make text in select and td properly aligned left
     th select{
       margin-left: -4px;
+      position: relative;
+      //&:after{
+      //  position: absolute;
+      //  content: ' ';
+      //  display: block;
+      //  right: 0;
+      //  top: 50%;
+      //  transform: translateY(-50%);
+      //  height: 0.5rem;
+      //  width: 0.888rem;
+      //  background: red;
+      //  //background: url(/assets/select_arrow.png) no-repeat center;
+      //  //background-size: cover;
+      //}
     }
     //for better mobile view
     th:last-child{
@@ -58,14 +72,14 @@
   .doc_download_btn_img{
     width: 1.222rem;
     height: 0.888rem;
-    background: url(/assets/download.png) no-repeat center;
+    background: url(/images/download.png) no-repeat center;
     background-size: cover;
     display: inline-block;
     vertical-align: middle;
   }
   &:hover{
     .doc_download_btn_img{
-      background: url(/assets/download_yellow.png) no-repeat center;
+      background: url(/images/download_yellow.png) no-repeat center;
       background-size: cover;
     }
   }
