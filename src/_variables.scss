@@ -122,6 +122,7 @@ type-a hover behavior:
     text->text-hover
   border-color:
     text->text-hover
+width: -/255/40%
 */
 $type-a-text: #000;
 $type-a-text-hover: $color-primary;
@@ -135,6 +136,20 @@ type-b hover behavior:
     text->white
   border-color:
     border->border
+width: -/255/40%
 */
 $type-b-text: #000;
 $type-b-border: $color-primary;
+
+/*
+---------------------TYPE C---------------------
+type-a hover behavior:
+  background:
+    border->border
+  text-color:
+    white->white
+  border-color:
+    border->border
+width: -/100%/400
+*/
+$type-c-border: $color-primary;

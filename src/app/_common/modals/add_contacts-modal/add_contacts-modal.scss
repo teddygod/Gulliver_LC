@@ -41,7 +41,10 @@
     margin-bottom: 0;
   }
   input[type="text"]{
-    padding: 0 10px;
+    padding: 3px 10px;
+  }
+  input[type="text"]:not(:disabled):not([readonly]){
+    background: transparent;
   }
   &>span{
     padding-right: 10px;
