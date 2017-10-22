@@ -1,0 +1,110 @@
+.contacts_people_flex_container{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: -30px;
+}
+.contacts_people_holder{
+  margin-right: -30px;
+  padding-bottom: 30px;
+}
+.contacts_people_item{
+  display: inline-block;
+  width: 320px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+.people_card{
+  padding: 14px 16px 24px;
+  //padding: 0.777rem 0.888rem 1.333rem;
+  background: white;
+}
+.people_card_img{
+  position: relative;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+.people_card_cross{
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 18px;
+  height: 18px;
+  background: url(/images/black_cross.png) no-repeat center;
+  background-size: cover;
+  cursor: pointer;
+}
+.people_card_content{
+  padding-top: 18px;
+  //padding-top: 1rem;
+  span{
+    display: inline-block;
+    width: 100%;
+    color: #4d4d4d;
+    font-weight: 300;
+    font-size: 0.888rem;
+  }
+  .people_card_name{
+    font-size: 1.222rem;
+    color: #000;
+  }
+}
+.tar_row{
+  text-align: right;
+}
+.btn{
+  cursor: pointer;
+}
+.btn_type_a{
+  font-size: 1.111rem;
+  width: 12.5rem;
+  max-width: 40%;
+  color: $type-a-text;
+  border: 1px solid $type-a-text;
+  background: transparent;
+  margin-bottom: 0;
+  line-height: 1.2rem;
+  &:hover{
+    color: $type-a-text-hover;
+    border: 1px solid $type-a-text-hover;
+  }
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}
+.btn_type_b{
+  font-size: 1.111rem;
+  width: 12.5rem;
+  max-width: 40%;
+  color: $type-b-text;
+  border: 1px solid $type-b-border;
+  background: transparent;
+  margin-bottom: 0;
+  line-height: 1.2rem;
+  &:hover{
+    color: white;
+    background: $type-b-border;
+  }
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}
+.btn_type_c{
+  font-size: 1.111rem;
+  width: 100%;
+  max-width: 400px;
+  color: white;
+  border: 1px solid $type-c-border;
+  background: $type-c-border;
+  margin-bottom: 0;
+  line-height: 1.2rem;
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}

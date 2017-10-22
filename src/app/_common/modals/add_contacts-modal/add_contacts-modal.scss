@@ -1,0 +1,117 @@
+.modal-guliver{
+  .modal-content{
+    padding-top: 1.666rem;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .modal-header{
+    background: white;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 1.333rem;
+    justify-content: center;
+    border: none;
+    h4{
+      font-size: 0.777rem;
+      font-weight: 300;
+      color: #000;
+    }
+  }
+  .modal-body{
+    padding-bottom: 1.333rem;
+    padding-top: 0;
+    .form-group select.form-control{
+      border-radius: 0;
+      border: none;
+      border-bottom: 1px solid #293133;
+      padding: 0 7px;
+      font-size: 0.777rem;
+      height: auto;
+    }
+  }
+  .modal-footer{
+    border: none;
+    padding-top: 0;
+    justify-content: center;
+  }
+}
+.form-group{
+  margin-bottom: 1.333rem;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  input[type="text"]{
+    padding: 3px 10px;
+  }
+  input[type="text"]:not(:disabled):not([readonly]){
+    background: transparent;
+  }
+  &>span{
+    padding-right: 10px;
+    padding-left: 10px;
+    text-align: right;
+    &.has-warning{
+      color: #990000;
+    }
+  }
+  &.has-warning{
+    input[type="text"]{
+      border-color: #990000;
+    }
+  }
+  &-upload{
+    padding: 0.888rem 10px;
+    background: #f4f8f9;
+    overflow: hidden;
+    position: relative;
+    label{
+      white-space: nowrap;
+      margin-bottom: 0;
+      cursor: pointer;
+      span{
+        margin-bottom: 0;
+        color: #4D4D4D;
+        display: inline-block;
+      }
+    }
+    input[type="file"]{
+      position: absolute;
+      top: 0;
+      left: -9999px;
+    }
+    .form_upload{
+      &_plus{
+        width: 1.666rem;
+        height: 1.666rem;
+        background: url(/images/upload_plus.png) no-repeat center;
+        background-size: cover;
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      &_text{
+        white-space: normal;
+        vertical-align: bottom;
+      }
+      &_tip{
+        display: block;
+        white-space: nowrap;
+        font-size: 0.777rem;
+        line-height: 1;
+      }
+      &_format{
+        display: block;
+        white-space: nowrap;
+        font-size: 0.555rem;
+        line-height: 1;
+      }
+    }
+  }
+}
+.form-control.underlined{
+  border-bottom: 1px solid #293133;
+  font-size: 0.777rem;
+  &::placeholder{
+    color: #4d4d4d;
+    font-style: normal;
+  }
+}
