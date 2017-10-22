@@ -1,0 +1,86 @@
+---
+layout: app/app-layout
+pagename: profile_setting
+---
+
+<div class="title-block">
+    <h1 class="title">
+        Документы
+    </h1>
+</div>
+<section class="section">
+    <form action="#" class="profile_settings_form" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label class="control-label">Логин</label>
+                    <input type="text" disabled="disabled" class="form-control underlined" value="pullandbear@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Старый пароль</label>
+                    <input type="text" class="form-control underlined">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Новый пароль</label>
+                    <input type="text" class="form-control underlined">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Подтверждение пароля</label>
+                    <input type="text" class="form-control underlined">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Название компании(юридическое)</label>
+                    <input type="text" disabled="disabled" class="form-control underlined" value="PULL&BEAR">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label class="control-label">ЕДРПОУ</label>
+                    <input type="text" disabled="disabled" class="form-control underlined" value="26565654858">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Бренд</label>
+                    <input type="text" class="form-control underlined" value="PULL&BEAR">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Название магазина</label>
+                    <input type="text" class="form-control underlined" value="PULL&BEAR">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">ФИО</label>
+                    <input type="text" class="form-control underlined" value="Иванов Иван Иванович">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Должность</label>
+                    <input type="text" class="form-control underlined" value="Директор">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                <div class="form-group">
+                    <label class="control-label">Контактный телефон</label>
+                    <input type="text" class="form-control underlined" value="26565654858">
+                </div>
+                <div class="form-group form-group-upload">
+                    <label>
+                        <input type="file">
+                        <span class="form_upload_plus"></span>
+                        <span class="form_upload_text">
+                            <span class="form_upload_tip">Загрузить новое фото профиля</span>
+                            <span class="form_upload_format">Файлы в формате jpg или png</span>
+                        </span>
+                    </label>
+                </div>
+                <div class="form-group profile_img_holder">
+                    <img src="/images/people_card_woman.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile_settings_submit_btn_holder">
+                    <button class="btn btn_type_c">Сохранить изменения</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>
