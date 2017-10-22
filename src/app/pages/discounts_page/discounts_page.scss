@@ -1,7 +1,7 @@
-.discounts_row{
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-bottom: 30px;
+.discounts_row,.adds_single_row{
+  padding-top: 0.888rem;
+  padding-bottom: 0.888rem;
+  margin-bottom: 1.666rem;
   background: white;
   img{
     width: 100%;
@@ -14,5 +14,42 @@
     font-size: 0.777rem;
     line-height: 2em;
     color: #4D4D4D;
+    margin: 0;
+    padding-bottom: 10px;
+    &:last-child{
+      padding-bottom: 0;
+    }
   }
+}
+.section_pagination{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  li{
+    display: inline-block;
+    font-size: 1.111rem;
+    margin-left: 5px;
+    background: transparent;
+    transition: background 0.4s ease;
+    &:hover,&.active{
+      background: $color-primary;
+    }
+  }
+  a{
+    display: inline-block;
+    text-align: center;
+    width: 2.777rem;
+    line-height: 2.777rem;
+    vertical-align: top;
+    color: #4D4D4D;
+    text-decoration: none;
+    &:hover{
+      color: #4D4D4D;
+      text-decoration: none;
+    }
+  }
+}
+.pagination_with_btn_row,.two_btn_row{
+  justify-content: space-between;
 }
