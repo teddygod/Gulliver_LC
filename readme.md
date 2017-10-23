@@ -20,7 +20,7 @@ bower install
 
 Build the project and start local web server
 ```
-npm start
+npm first && npm start
 ```
 
 Open the project [http://localhost:4000](http://localhost:4000).
