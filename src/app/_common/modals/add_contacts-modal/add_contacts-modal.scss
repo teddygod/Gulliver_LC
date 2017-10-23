@@ -32,7 +32,7 @@
   .modal-footer{
     border: none;
     padding-top: 0;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 .form-group{
@@ -114,4 +114,13 @@
     color: #4d4d4d;
     font-style: normal;
   }
+}
+.modal_close_cross{
+  background: url(/images/black_cross.png) center no-repeat;
+  background-size: cover;
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  right: 1rem;
+  top: 1.333rem;
 }
