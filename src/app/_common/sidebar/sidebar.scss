@@ -40,7 +40,7 @@
 
 	.sidebar-menu {
 
-		font-size: 14px;
+		font-size: 22px;
 		list-style: none;
 		margin: 0;
 		padding: 0;
@@ -111,10 +111,12 @@
 
 			// First level items links
 			& > a {
-				padding-top: 15px;
-				padding-bottom: 15px;
+				padding-top: 10px;
+				padding-bottom: 10px;
 				padding-left: 20px;
-				padding-right: 15px;
+				padding-right: 20px;
+				display: flex;
+				align-items: center;
 			}
 
 			// First level active links have primary background
@@ -143,8 +145,8 @@
 			// First level item links arrow
 			& > a {
 				i {
-					margin-right: 5px;
-					font-size: 16px;
+					margin-right: 20px;
+					font-size: 22px;
 
 					&.arrow {
 						font-size: 20px;
