@@ -7,7 +7,7 @@
 	left: 0;
 	background-color: $color-bg;
 	box-shadow: 0 0 3px #ccc;
-	transition: left 0.3s ease, padding-left 0.3s ease; 
+	transition: left 0.3s ease, padding-left 0.3s ease;
 	overflow: hidden;
 
 	.content {
@@ -16,7 +16,7 @@
 		$padding-y: $content-padding-y-md;
 
 		padding: $header-height + $padding-y $padding-x $footer-height + $padding-y $padding-x;
-		min-height: 100vh;	
+		min-height: 100vh;
 
 		@include media-up(xl) {
 			$padding-x: $content-padding-x-xl;
@@ -54,7 +54,7 @@
 		// left: -$sidebar-width;
 		// width: calc(100% + #{$sidebar-width});
 	}
-	
+
 	&.sidebar-open {
 		// Disable content scrolling when sidebar is open
 		@include media-down(md) {
@@ -66,7 +66,7 @@
 	}
 
 	&.blank {
-		background-color: #667380;
+		background-color: #F4F7F9;
 	}
 
 }
