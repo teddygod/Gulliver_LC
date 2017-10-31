@@ -5,8 +5,8 @@
 		padding-left: 25px;
 	  	width: 87%;
 		line-height: $header-height;
-		font-size: 16px;
-		
+		font-size: 40px;
+
 		@include media-down(sm) {
 			line-height: $header-height-xs;
 			font-size: 16px;

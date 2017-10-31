@@ -16,6 +16,7 @@
     "bower": "^1.8.2",
     "gulp-cli": "^1.4.0",
     "gulp-install": "^1.1.0",
+    "jquery-datetimepicker": "^2.5.11",
     "opencollective": "^1.0.3"
   },
   "devDependencies": {

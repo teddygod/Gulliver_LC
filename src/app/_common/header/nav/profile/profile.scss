@@ -17,9 +17,9 @@
 		}
 
 		.name {
-			display: inline-block;	
+			display: inline-block;
 			margin-right: 9px;
-			font-weight: bold;
+			//font-weight: bold;
 
 			@include media-down(sm) {
 				display: none;

@@ -68,11 +68,19 @@
 			height: auto;
 		}
 
-
+		li {
+			border-left: solid 5px transparent;
+			&:hover {
+				color: $sidebar-color-text-active;
+				background-color: $sidebar-color-secondary;
+				border-left: solid 5px $color-primary;
+			}
+		}
 		// All links which are not active
 		// have subdued color
 		li a {
-			color: $sidebar-color-text;
+			//color: $sidebar-color-text_g;
+			color: #fff;
 			text-decoration: none;
 			display: block;
 		}
@@ -84,7 +92,7 @@
 		li.open > a,
 		li.open a:hover {
 			color: $sidebar-color-text-active;
-			background-color: $sidebar-color-secondary;
+			background-color: $sidebar-color-theerd;
 		}
 
 		.arrow {
@@ -121,20 +129,14 @@
 
 			// First level active links have primary background
 		  	&.active {
-			  &:before {
-				height: 50px;
-				width: 3px;
-				background-color: $color-primary;
-				content: "";
-				display: inline-block;
-				float: left;
-			  }
+				color: $sidebar-color-text-active;
+				border-left: solid 5px $color-primary;
 			}
+
 			&.active > a,
 			&.active > a:hover {
 			  	background-color: rgba(255,255,255,.1) !important;
-				//color: $color-text-inverse !important;
-
+				color: $color-text-inverse !important;
 			}
 
 			// First level active links have bit darker background

@@ -1,11 +1,11 @@
 .adds_list_item{
   background: white;
-  padding: 0.555rem 0.555rem 1.111rem;
+  padding: 0.777rem 0.777rem 1.333rem;
   margin-bottom: 1.666rem;
 
 
   &_img{
-    padding-bottom: 0.555rem;
+    padding-bottom: 0.777rem;
     display: inline-block;
 	  width: 100%;
     img{
@@ -13,7 +13,7 @@
     }
   }
   &_heading{
-    padding-bottom: 0.555rem;
+    padding-bottom: 0.777rem;
     text-decoration: none!important;
     display: inline-block;
     &:hover {
@@ -23,20 +23,20 @@
     h4{
       font-weight: 300;
       color: #000;
-      line-height: 1.444rem;
-      font-size: 1rem;
+      line-height: 1.666rem;
+      font-size: 1.286rem;
       min-height: 2.888rem;
       margin: 0;
     }
   }
   &_text{
     font-weight: 300;
-    font-size: 0.777rem;
+    font-size: 1rem;
     color: #4D4D4D;
-    padding-bottom: 0.555rem;
+    padding-bottom: 0.777rem;
     p{
       margin: 0;
-      padding-bottom: 0.555rem;
+      padding-bottom: 0.777rem;
       &:last-child{
         padding-bottom: 0;
       }
@@ -45,7 +45,7 @@
 }
 .adds_list_more_info_btn{
   display: inline-block;
-  font-size: 0.777rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #4D4D4D;
   text-decoration: none!important;

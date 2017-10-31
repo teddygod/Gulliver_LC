@@ -20,6 +20,11 @@ body {
 	font-family: 'HeliosLight', sans-serif;
 	color: $color-text;
 	overflow-x: hidden;
+	font-size: $default-font;
+}
+
+body {
+	font-size: $default-font;
 }
 
 .main-wrapper {
