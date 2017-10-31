@@ -9,13 +9,13 @@
 }
 
 .auth-container {
-	width: 450px;
+	width: 40%;
 	min-height: 330px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
-	
+
 	.auth-header {
 		//background-color: $color-primary;
 		text-align: center;
@@ -34,6 +34,9 @@
 	.auth-content {
 		padding: 30px 50px;
 		min-height: 260px;
+		input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+			background-color: transparent;
+		}
 	}
 
 	.forgot-btn {

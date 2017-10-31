@@ -42,11 +42,11 @@
     display: inline-block;
     width: 100%;
     color: #4d4d4d;
-    font-weight: 300;
-    font-size: 0.888rem;
+    font-weight: normal;
+    font-size: 1.143rem;
   }
   .people_card_name{
-    font-size: 1.222rem;
+    font-size: 1.571rem;
     color: #000;
   }
 }
@@ -63,7 +63,7 @@
   margin-bottom: 0;
   line-height: 1.2rem;
   &:hover{
-    color: $type-a-text-hover;
+    color: $type-a-text;
     border: 1px solid $type-a-text-hover;
   }
   &:focus{
@@ -81,13 +81,71 @@
   margin-bottom: 0;
   line-height: 1.2rem;
   &:hover{
-    color: white;
-    background: $type-b-border;
+    color: $color-text-disable;
+    background: lighten($type-b-border, 10%);
   }
   &:focus{
     outline: none;
     box-shadow: none;
   }
+}
+.btn_type_c{
+	font-size: 1.111rem;
+	width: 100%;
+	max-width: 400px;
+	color: $color-text-disable;
+	border: 1px solid $type-c-border;
+	background: $type-c-border;
+	margin-bottom: 0;
+	line-height: 1.2rem;
+	&:hover {
+		color: $color-text-disable;
+		background: lighten($type-c-border, 40%);
+	}
+	&:focus{
+		outline: none;
+		box-shadow: none;
+	}
+}
+.btn_type_d{
+  font-size: 1.111rem;
+  width: auto;
+  min-width: 47.5%;
+  color: $type-b-text;
+  border: 1px solid $type-b-border;
+  background: transparent;
+  margin-bottom: 0;
+  line-height: 1.2rem;
+  &:hover{
+    color: $color-text-disable;
+    background: lighten($type-b-border, 10%);
+  }
+  &:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}
+.btn_type_e{
+	font-size: 1.111rem;
+	//width: 12.5rem;
+	max-width: 60%;
+	color: $type-e-text;
+	border: 1px solid $type-e-border;
+	background: transparent;
+	margin-bottom: 0;
+	line-height: 1.2rem;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	&:hover{
+		color: $type-e-text;
+		border: 1px solid $type-a-text-hover;
+		background: $type-a-text-hover;
+	}
+	&:focus{
+		outline: none;
+		box-shadow: none;
+	}
 }
 .modal{
   .modal-footer{
@@ -102,20 +160,6 @@
         margin-bottom: 0;
       }
     }
-  }
-}
-.btn_type_c{
-  font-size: 1.111rem;
-  width: 100%;
-  max-width: 400px;
-  color: white;
-  border: 1px solid $type-c-border;
-  background: $type-c-border;
-  margin-bottom: 0;
-  line-height: 1.2rem;
-  &:focus{
-    outline: none;
-    box-shadow: none;
   }
 }
 .tac_row{
@@ -143,4 +187,8 @@
       }
     }
   }
+}
+.form-control:disabled, .form-control[readonly] {
+	background-color: inherit;
+	color: $color-text-disable;
 }

@@ -47,7 +47,6 @@
 		}
 	}
 
-
 	@include media-down(md) {
 		padding-left: 0;
 		// background-color: #ccc;
@@ -68,5 +67,4 @@
 	&.blank {
 		background-color: #F4F7F9;
 	}
-
 }

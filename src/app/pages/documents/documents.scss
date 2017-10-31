@@ -15,7 +15,7 @@
     background-color: white;
     transition: background-color 0.4s ease;
     td{
-      font-size: 0.777rem;
+      font-size: 1rem;
     }
     &:hover{
       background-color: #EAEEF0;
@@ -27,7 +27,7 @@
     th,th select{
       font-weight: 300;
       color: #4D4D4D;
-      font-size: 0.777rem;
+      font-size: 1rem;
     }
     //to compensate default select padding and make text in select and td properly aligned left
     th select{
@@ -55,7 +55,7 @@
 }
 .title{
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.286rem;
   &-block{
     border-bottom: none;
     margin: 0;
@@ -65,7 +65,7 @@
   text-decoration: none;
   padding: 5px;
   span{
-    font-size: 0.777rem;
+    font-size: 1rem;
     display: inline-block;
     vertical-align: middle;
     padding-right: 4px;
@@ -79,6 +79,7 @@
     vertical-align: middle;
   }
   &:hover{
+	  color: $color-text-disable;
     .doc_download_btn_img{
       background: url(/images/download_yellow.png) no-repeat center;
       background-size: cover;

@@ -1,0 +1,37 @@
+//SCSS file for order
+
+.order_form {
+	.modal-dialog {
+		width: 100%;
+		@media (min-width: 576px) {
+			max-width: 720px;
+			margin: 30px auto;
+		}
+	}
+	select, input {
+		font-size: 1rem !important;
+		line-height: 1rem;
+		padding: 0;
+		margin-bottom: 1rem;
+	}
+	.datepicker {
+		box-shadow: none !important;
+
+	}
+	.datepicker-days {
+		width: 250px;
+		padding: 1rem;
+		box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
+	}
+
+	.table-condensed {
+		width: 100%;
+		padding: 1rem;
+	}
+
+	.active.day {
+		background: #d4d4d4;
+	}
+}
+
+

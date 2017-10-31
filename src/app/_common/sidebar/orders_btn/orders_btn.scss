@@ -14,8 +14,9 @@
   bottom: 0;
   left: 25px;
   //width: $sidebar-width;
-  width: 175px;
+  width: 230px;
   margin: 0 auto 20px;
+	font-size: 1.25rem;
   @include media-down(sm) {
 
   }
@@ -31,4 +32,73 @@
     transition: left 0.3s ease;
     left: -$sidebar-width;
   }
+}
+
+.form-group {
+	input[type='number'] {
+		-moz-appearance:textfield;
+		padding: 3px 7px;
+	}
+
+	input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+	}
+
+	input[type=date] {
+
+		&::-webkit-datetime-edit-month-field {
+			color: inherit;
+		}
+		&::-webkit-datetime-edit-day-field {
+			color: inherit;
+		}
+		&::-webkit-datetime-edit-year-field {
+			color: inherit;
+		}
+
+		&::-webkit-clear-button {
+			display: none;
+		}
+		&::-webkit-inner-spin-button {
+			display: none;
+		}
+		&::-webkit-calendar-picker-indicator {
+			font-size: 18px;
+			content: "\f073";
+
+
+			&:hover {
+				background-color: lighten(#2f2f2f,40%);
+				color: darken(#fff, 10%);
+				cursor: pointer;
+			}
+			&:active {
+				color: blue;
+			}
+		}
+	}
+	/*
+
+  Styling of <input type='date'>
+
+  // Holds mm/dd/yyyy
+  ::-webkit-datetime-edit { }
+  // appears when you edited date
+  ::-webkit-clear-button { }
+  // Up/down button
+  ::-webkit-inner-spin-button { }
+  // ▼ select
+  ::-webkit-calendar-picker-indicator { }
+  // month field
+  ::-webkit-datetime-edit-month-field { }
+  // day field
+  ::-webkit-datetime-edit-day-field { }
+  // year field
+  ::-webkit-datetime-edit-year-field { }
+
+
+
+
+*/
 }

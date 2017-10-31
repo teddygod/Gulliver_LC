@@ -2,6 +2,7 @@
 *						App Variables
 **************************************************************/
 
+$default-font: 16px;
 
 /*************************************************************
 *					  Colors Definitions
@@ -17,10 +18,13 @@ $color-divider: #d7dde4 !default;
 $color-bg: #F4F7F9 !default;
 
 $color-text: #4D4D4D !default;
+$color-btn-text: #293133 !default;
 $color-text-light: #7e8e9f !default;
+$color-text-black: #231F20 !default;
 $color-text-muted: #C2CCD6;
 $color-text-inverse: #ffffff !default;
 $color-text-passive: #c5c5c5 !default;
+$color-text-disable: #000 !default;
 
 $color-success: #4bcf99 !default;
 $color-info: #76D4F5 !default;
@@ -34,7 +38,7 @@ $color-inverse: #131e26 !default;
 **************************************************************/
 
 // Buttons
-$btn-radius: 25px !default;
+$btn-radius: 0 !default;
 
 $btn-primary-color: $color-primary !default;
 $btn-primary-color-text: $color-text-inverse !default;
@@ -60,8 +64,10 @@ $footer-height: 50px !default;
 
 $sidebar-color-primary: darken(#000, 10%) !default;
 $sidebar-color-secondary: darken($sidebar-color-primary, 6%) !default;
+$sidebar-color-theerd: lighten($sidebar-color-primary, 10%) !default;
 
 $sidebar-color-text: fade-out($color-text-inverse, 0.5) !default;
+$sidebar-color-text_g: fade-out($color-text-inverse, 0.9) !default;
 $sidebar-color-text-active: $color-text-inverse;
 
 // Dropdowns
@@ -153,3 +159,17 @@ type-a hover behavior:
 width: -/100%/400
 */
 $type-c-border: $color-primary;
+
+/*
+---------------------TYPE E---------------------
+type-a hover behavior:
+  background:
+    border->border
+  text-color:
+    white->white
+  border-color:
+    border->border
+width: -/100%/400
+*/
+$type-e-text: #000;
+$type-e-border: $color-primary;

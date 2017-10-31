@@ -51,9 +51,13 @@
 	& > ul > li > a {
 		padding: 0 15px;
 		color: $color-text;
+		font-size: 22px;
 
 		&:hover {
 			color: $color-primary;
+		}
+		&.nav-link{
+			&:hover {color: $color-text;}
 		}
 	}
 
