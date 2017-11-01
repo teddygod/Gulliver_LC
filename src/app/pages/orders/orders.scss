@@ -1,0 +1,16 @@
+//SCSS file
+.orders_count {
+	height: 1rem;
+	line-height: 1.7rem;
+	sup.new_not {
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		text-align: center;
+		background: $color-primary;
+		display: block;
+		border-radius: 50%;
+		top: -28px;
+		right: -11px;
+	}
+}

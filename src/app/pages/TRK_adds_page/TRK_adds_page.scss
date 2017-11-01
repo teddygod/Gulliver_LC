@@ -49,8 +49,13 @@
   font-weight: 300;
   color: #4D4D4D;
   text-decoration: none!important;
+	padding: 0 .5rem;
+	border: solid 1px transparent;
   &:hover{
     text-decoration: none!important;
+	color:  #4D4D4D !important;
+	border: solid 1px $color-text-black;
+	  padding: 0 .5rem;
   }
   &_holder{
     text-align: center;

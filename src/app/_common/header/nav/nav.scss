@@ -57,7 +57,10 @@
 			color: $color-primary;
 		}
 		&.nav-link{
-			&:hover {color: $color-text;}
+			&:hover {
+				color: $color-text;
+				cursor: default;
+			}
 		}
 	}
 

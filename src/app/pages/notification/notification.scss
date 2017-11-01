@@ -1,5 +1,5 @@
 .card-header:hover {
-	box-shadow: 0 0 5px 2px rgba(0,0,0,.3);
+	box-shadow: 0 0 5px 0 rgba(182,182,182,.3);
 }
 a[href^="#notif_collapse"] {
 	text-decoration: none !important;
@@ -11,10 +11,11 @@ a[href^="#notif_collapse"] {
 a[href^="#notif_collapse"]:after {
 	display: block;
 	content: "\f107";
+	color: #BDC2C6;
 	position: absolute;
 	width: auto;
 	height: auto;
-	right: 2%;
+	right: 4%;
 	top: 14%;
 	font:14px/1 FontAwesome;
 	font-size: 40px;
@@ -22,7 +23,36 @@ a[href^="#notif_collapse"]:after {
 	opacity: 0;
 }
 
+a[aria-expanded="false"]:after {
+	transform: rotate(0deg);
+}
+a[aria-expanded="true"]:after {
+	transform: rotate(180deg);
+}
 
 .title-notif:hover a[href^="#notif_collapse"]:after {
 	opacity: 1;
 }
+
+
+
+
+
+.del_notif {
+	color: #BDC2C6;
+}
+.title-notif {
+	a {
+		color: #000;
+		span {
+			color: #969696;
+			font-size: 1.1rem
+		}
+		&:hover, &:hover > span {
+			color: #000;
+		}
+	}
+
+}
+
+

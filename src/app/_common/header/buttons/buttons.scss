@@ -15,8 +15,10 @@
 
 		&:hover,
 		&:focus {
-			border: 2px solid darken($color-primary, 10%);
+			border: 2px solid $color-primary;
+			background-color: $color-primary;
 			color: darken($color-text, 10%);
+
 		}
 
 

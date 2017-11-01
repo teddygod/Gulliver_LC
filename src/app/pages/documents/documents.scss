@@ -71,17 +71,17 @@
     padding-right: 4px;
   }
   .doc_download_btn_img{
-    width: 1.222rem;
-    height: 0.888rem;
-    background: url(/images/download.png) no-repeat center;
-    background-size: cover;
+    //width: 1.222rem;
+    //height: 0.888rem;
+    //background: url(/images/download.png) no-repeat center;
+    //background-size: cover;content: '\809';
     display: inline-block;
     vertical-align: middle;
   }
   &:hover{
 	  color: $color-text-disable;
     .doc_download_btn_img{
-      background: url(/images/download_yellow.png) no-repeat center;
+      //background: url(/images/download_yellow.png) no-repeat center;
       background-size: cover;
     }
   }
