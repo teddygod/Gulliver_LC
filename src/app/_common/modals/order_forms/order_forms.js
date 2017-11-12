@@ -269,6 +269,9 @@ $(function () {
 				date_time = $(".date_time"),
 				date_times = $(".date_times"),
 				owner_order = $(".owner_order"),
+				contract_numb = $(".contract_numb"),
+				owner_order_phone = $(".owner_order_phone"),
+				owner_order_email = $(".owner_order_email"),
 				append_form_SB = $(".append_form_SB"),
 				material_badge = $(".material_badge"),
 				permanent_badge = $(".permanent_badge"),
@@ -281,6 +284,9 @@ $(function () {
 				$(".guest_badge").css("display", "none");
 				$(".temporary_badge").css("display", "none");
 				$(".territory_badge").css("display", "none");
+				$(".contract_numb").css("display", "none");
+				$(".owner_order_phone").css("display", "none");
+				$(".owner_order_email").css("display", "none");
 
 
 			switch (securety){
@@ -289,36 +295,53 @@ $(function () {
 					owner_order.css("display", "none");
 					append_form_SB.css("display", "none");
 					break;
-				case "2" :
+				case "2" : //material_badge
 					date_time.css("display", "flex");
 					owner_order.css("display", "block");
 					append_form_SB.css("display", "block");
 					material_badge.css("display", "block");
+
+					contract_numb.css("display", "none");
+					owner_order_phone.css("display", "none");
+					owner_order_email.css("display", "none");
 					break;
-				case "3" :
+				case "3" : //permanent_badge
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					append_form_SB.css("display", "block");
 					permanent_badge.css("display", "block");
+
+					contract_numb.css("display", "block");
+					owner_order_phone.css("display", "none");
+					owner_order_email.css("display", "none");
 					break;
-				case "4" :
+				case "4" : //guest_badge
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					append_form_SB.css("display", "block");
 					guest_badge.css("display", "block");
+					contract_numb.css("display", "block");
+					owner_order_phone.css("display", "none");
+					owner_order_email.css("display", "none");
 					break;
-				case "5" :
+				case "5" : //temporary_badge
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					append_form_SB.css("display", "block");
 					temporary_badge.css("display", "block");
+					contract_numb.css("display", "block");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "none");
 					break;
-				case "6" :
+				case "6" : territory_badge
 					date_time.css("display", "none");
 					//date_times.css("display", "flex");
 					owner_order.css("display", "block");
 					append_form_SB.css("display", "block");
 					territory_badge.css("display", "block");
+					contract_numb.css("display", "block");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "none");
 					break;
 				default:
 					securety.css("display", "none");
@@ -339,6 +362,9 @@ $(function () {
 				date_time = $(".date_time"),
 				date_times = $(".date_times"),
 				owner_order = $(".owner_order"),
+				contract_numb = $(".contract_numb"),
+				owner_order_phone = $(".owner_order_phone"),
+				owner_order_email = $(".owner_order_email"),
 				append_form_MARC = $(".append_form_MARC"),
 				decorate_vitrina = $(".decorate_vitrina"),
 				add_inform = $(".add_inform"),
@@ -353,6 +379,9 @@ $(function () {
 				$(".foto_vodeo").css("display", "none");
 				$(".action_owner").css("display", "none");
 				$("#foto_vid").css("display", "none");
+				$(".contract_numb").css("display", "none");
+				$(".owner_order_phone").css("display", "none");
+				$(".owner_order_email").css("display", "none");
 
 
 			switch (marcet){
@@ -361,37 +390,52 @@ $(function () {
 					owner_order.css("display", "none");
 					append_form_MARC.css("display", "none");
 					break;
-				case "2" :
+				case "2" : //decorate_vitrina
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					append_form_MARC.css("display", "block");
 					decorate_vitrina.css("display", "block");
+					contract_numb.css("display", "block");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "none");
 					break;
-				case "3" :
+				case "3" : //add_inform
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					append_form_MARC.css("display", "block");
 					add_inform.css("display", "block");
+					contract_numb.css("display", "none");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "block");
 					break;
-				case "4" :
+				case "4" : //add_in_magazine
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					append_form_MARC.css("display", "block");
 					add_in_magazine.css("display", "block");
+					contract_numb.css("display", "none");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "block");
 					break;
-				case "5" :
+				case "5" : //foto_vodeo
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					foto_vid.css("display", "block");
 					append_form_MARC.css("display", "block");
 					foto_vodeo.css("display", "block");
+					contract_numb.css("display", "none");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "block");
 					break;
-				case "6" :
+				case "6" : //action_owner
 					date_time.css("display", "none");
 					//date_times.css("display", "flex");
 					owner_order.css("display", "block");
 					append_form_MARC.css("display", "block");
 					action_owner.css("display", "block");
+					contract_numb.css("display", "none");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "block");
 					break;
 				default:
 					securety.css("display", "none");
@@ -412,11 +456,17 @@ $(function () {
 				date_time = $(".date_time"),
 				date_times = $(".date_times"),
 				owner_order = $(".owner_order"),
+				contract_numb = $(".contract_numb"),
+				owner_order_phone = $(".owner_order_phone"),
+				owner_order_email = $(".owner_order_email"),
 				append_form_IT = $(".append_form_IT");
 
 				$(".telephony").css("display", "none")
 				$(".internet").css("display", "none");
 				$(".data_channel").css("display", "none");
+				$(".contract_numb").css("display", "none");
+				$(".owner_order_phone").css("display", "none");
+				$(".owner_order_email").css("display", "none");
 
 
 			switch (it_dep){
@@ -429,6 +479,9 @@ $(function () {
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					append_form_IT.css("display", "block");
+					contract_numb.css("display", "block");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "block");
 					break;
 				default:
 					securety.css("display", "none");
@@ -449,9 +502,15 @@ $(function () {
 				date_time = $(".date_time"),
 				date_times = $(".date_times"),
 				owner_order = $(".owner_order"),
+				contract_numb = $(".contract_numb"),
+				owner_order_phone = $(".owner_order_phone"),
+				owner_order_email = $(".owner_order_email"),
 				append_form_OTHER = $(".append_form_OTHER");
 
 				$(".append_form_OTHER").css("display", "none");
+				$(".contract_numb").css("display", "none");
+				$(".owner_order_phone").css("display", "none");
+				$(".owner_order_email").css("display", "none");
 
 
 
@@ -465,6 +524,9 @@ $(function () {
 					date_time.css("display", "none");
 					owner_order.css("display", "block");
 					append_form_OTHER.css("display", "block");
+					contract_numb.css("display", "none");
+					owner_order_phone.css("display", "block");
+					owner_order_email.css("display", "block");
 					break;
 				default:
 					securety.css("display", "none");

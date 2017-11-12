@@ -8,7 +8,7 @@ $default-font: 16px;
 *					  Colors Definitions
 **************************************************************/
 
-$color-primary: #FFEC00 !default;
+$color-primary: #f8ff01 !default;
 $color-primary-light: lighten($color-primary, 10%) !default;
 $color-primary-lighter: lighten($color-primary-light, 6%) !default;
 $color-primary-dark: darken($color-primary, 10%) !default;
@@ -22,6 +22,7 @@ $color-btn-text: #293133 !default;
 $color-text-light: #7e8e9f !default;
 $color-text-black: #231F20 !default;
 $color-text-muted: #C2CCD6;
+$color-text-grey: #BDC2C6;
 $color-text-inverse: #ffffff !default;
 $color-text-passive: #c5c5c5 !default;
 $color-text-disable: #000 !default;
@@ -175,3 +176,16 @@ width: -/100%/400
 */
 $type-e-text: #000;
 $type-e-border: $color-primary;
+/*
+------------TYPE F---------------------
+type-a hover behavior:
+  background:
+    border->border
+  text-color:
+    white->white
+  border-color:
+    border->border
+width: -/100%/400
+*/
+$type-f-text: #000;
+$type-f-border: $color-text-black;

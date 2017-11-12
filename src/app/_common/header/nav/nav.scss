@@ -2,11 +2,14 @@
 	margin-left: auto;
 	white-space: nowrap;
 	padding-right: 40px;
-
 	@include media-down(sm) {
-		padding-right: 25px;
+		padding-right: 5px;
 	}
-
+	&:last-child {
+		@include media-down(sm) {
+			padding-right: 15px;
+		}
+	}
 	@include clearfix();
 
 	a {
@@ -30,6 +33,10 @@
 		position: relative;
 	  padding-right: 10px;
 
+		@include media-down(sm) {
+			padding-right: 0;
+		}
+
 		&:before {
 			display: block;
 			content: " ";
@@ -51,7 +58,7 @@
 	& > ul > li > a {
 		padding: 0 15px;
 		color: $color-text;
-		font-size: 22px;
+		font-size: 1.125rem;
 
 		&:hover {
 			color: $color-primary;

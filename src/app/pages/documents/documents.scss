@@ -24,6 +24,11 @@
 
   thead tr{
     background: #EAEEF0;
+	  @media all and (max-width: 768px){
+		  width: 130px;
+		  text-align: right !important;
+		  select {width: 100%;}
+	  }
     th,th select{
       font-weight: 300;
       color: #4D4D4D;
@@ -50,12 +55,19 @@
     //for better mobile view
     th:last-child{
       min-height: 5.65rem;
+		@include media-down(md){
+			min-height: 3.25rem;
+		}
     }
   }
 }
+//.flip-header {
+//	width: 119px;
+//	text-align: right !important;
+//}
 .title{
   font-weight: 400;
-  font-size: 1.286rem;
+  font-size: 1.125rem;
   &-block{
     border-bottom: none;
     margin: 0;

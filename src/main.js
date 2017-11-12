@@ -4,7 +4,9 @@ $(function() {
 
 });
 
-
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip()
+})
 /***********************************************
 *        NProgress Settings
 ***********************************************/
@@ -12,5 +14,5 @@ $(function() {
 // start load bar
 NProgress.start();
 
-// end loading bar 
+// end loading bar
 NProgress.done();

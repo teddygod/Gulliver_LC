@@ -11,6 +11,9 @@
 }
 .profile_settings_submit_btn_holder{
   padding-top: 1.333rem;
+	@include media-down(md) {
+		text-align: center;
+	}
 }
 .foto_container {
 	margin: 0 auto;

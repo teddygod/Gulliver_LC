@@ -1,0 +1,23 @@
+{{!----}}
+<div class="w-100 notification">
+	<div id="accordion" role="tablist">
+		{{#each notif}}
+		<div class="card card_notif mb-1 ">
+			<div class="card-header w-100 flex-nowrap justify-content-between" role="tab" id="notif_heading_{{id}}">
+				<h5 class="mb-0 title-notif w-100 ml-3 btn-block ">
+					<a data-toggle="collapse" href="#notif_collapse_{{id}}" class="btn-block active-underline py-3 " aria-expanded="false" aria-controls="notif_collapse_{{id}}">
+						 <span>{{title}} {{id}} <span>{{short}}</span></span> <span class="shevron"></span>
+					</a>
+				</h5>
+				<a href="#" class="mr-3 del_notif"><i class="fi icon-delet"></i></a>
+			</div>
+
+			<div id="notif_collapse_{{id}}" class="collapse" role="tabpanel" aria-labelledby="notif_heading_{{id}}" data-parent="#accordion">
+				<div class="card-body">
+					{{long}}
+				</div>
+			</div>
+		</div>
+{{/each}}
+	</div>
+</div>

@@ -4,6 +4,7 @@ var path = require('path');
 var gulp 	= require('gulp');
 var plugins = require('gulp-load-plugins')();
 
+
 var utils = require('./utils/utils');
 
 /********************************************
@@ -86,7 +87,7 @@ gulp.task('deploy', ['build'], function() {
 // // Run this task for development
 gulp.task('develop', [
 	'build',
-	'watch', 
+	'watch',
 	'connect'
 ]);
 

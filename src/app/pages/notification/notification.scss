@@ -4,33 +4,42 @@
 a[href^="#notif_collapse"] {
 	text-decoration: none !important;
 	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	&:hover {
 		color: inherit;
 	}
 }
-a[href^="#notif_collapse"]:after {
+
+a[href^="#notif_collapse"] > .shevron {
+	position: relative;
+	width: 40px;
+	height: 20px;
+}
+a[href^="#notif_collapse"] > .shevron:after {
 	display: block;
-	content: "\f107";
-	color: #BDC2C6;
+	content: "\e80a";
+	color: $color-text-grey;
 	position: absolute;
 	width: auto;
 	height: auto;
-	right: 4%;
-	top: 14%;
-	font:14px/1 FontAwesome;
-	font-size: 40px;
+	right: 15px;
+	top: -2px;
+	font:16px/1 "gul";
+	font-size: 27px;
 	text-rendering: auto;
 	opacity: 0;
 }
 
-a[aria-expanded="false"]:after {
+a[aria-expanded="false"] > .shevron:after {
 	transform: rotate(0deg);
 }
-a[aria-expanded="true"]:after {
+a[aria-expanded="true"] > .shevron:after {
 	transform: rotate(180deg);
 }
 
-.title-notif:hover a[href^="#notif_collapse"]:after {
+.title-notif:hover a[href^="#notif_collapse"] > .shevron:after {
 	opacity: 1;
 }
 
@@ -39,17 +48,17 @@ a[aria-expanded="true"]:after {
 
 
 .del_notif {
-	color: #BDC2C6;
+	color: $color-text-grey;
 }
 .title-notif {
 	a {
-		color: #000;
-		span {
-			color: #969696;
+		color: $color-text-disable;
+		span span {
+			color: $color-text;
 			font-size: 1.1rem
 		}
-		&:hover, &:hover > span {
-			color: #000;
+		&:hover, &:hover > span span {
+			color: $color-text-disable;
 		}
 	}
 

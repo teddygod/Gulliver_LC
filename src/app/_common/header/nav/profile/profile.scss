@@ -14,6 +14,9 @@
 			background-position: center;
 			background-size: cover;
 			vertical-align: middle;
+			@include media-down(md) {
+				margin-right: 0;
+			}
 		}
 
 		.name {
@@ -21,9 +24,9 @@
 			margin-right: 9px;
 			//font-weight: bold;
 
-			@include media-down(sm) {
-				display: none;
-			}
+			//@include media-down(sm) {
+			//	display: none;
+			//}
 		}
 
 		.arrow {

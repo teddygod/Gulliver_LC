@@ -43,10 +43,10 @@
     width: 100%;
     color: #4d4d4d;
     font-weight: normal;
-    font-size: 1.143rem;
+    font-size: 1rem;
   }
   .people_card_name{
-    font-size: 1.571rem;
+    font-size: 1.25rem;
     color: #000;
   }
 }
@@ -54,7 +54,7 @@
   cursor: pointer;
 }
 .btn_type_a{
-  font-size: 1.111rem;
+  font-size: 1.125rem;
   width: 12.5rem;
   max-width: 47.5%;
   color: $type-a-text;
@@ -72,7 +72,7 @@
   }
 }
 .btn_type_b{
-  font-size: 1.111rem;
+  font-size: 1.125rem;
   width: 12.5rem;
   max-width: 47.5%;
   color: $type-b-text;
@@ -90,7 +90,7 @@
   }
 }
 .btn_type_c{
-	font-size: 1.111rem;
+	font-size: 1.125rem;
 	width: 100%;
 	max-width: 400px;
 	color: $color-text-disable;
@@ -108,7 +108,7 @@
 	}
 }
 .btn_type_d{
-  font-size: 1.111rem;
+  font-size: 1.125rem;
   width: auto;
   min-width: 47.5%;
   color: $type-b-text;
@@ -126,7 +126,7 @@
   }
 }
 .btn_type_e{
-	font-size: 1.111rem;
+	font-size: 1.125rem;
 	//width: 12.5rem;
 	max-width: 60%;
 	color: $type-e-text;
@@ -137,10 +137,34 @@
 	display: block;
 	margin: 0 auto;
 	height: auto;
+	white-space: inherit;
+	@include media-down(md) {
+		max-width: 100%;
+		font-size: 1rem;
+	}
 	&:hover{
 		color: $type-e-text;
 		border: 1px solid $type-a-text-hover;
 		background: $type-a-text-hover;
+	}
+	&:focus{
+		outline: none;
+		box-shadow: none;
+	}
+}
+.btn_type_f{
+	font-size: 1.125rem;
+	width: auto;
+	min-width: 47.5%;
+	color: $type-b-text;
+	border: 1px solid $type-f-border;
+	background: transparent;
+	margin-bottom: 0;
+	line-height: 1.2rem;
+	&:hover{
+		color: $color-text-disable;
+		background: lighten($type-b-border, 10%);
+		border: 1px solid lighten($type-b-border, 10%);
 	}
 	&:focus{
 		outline: none;
@@ -154,8 +178,8 @@
       max-width: 75%;
       display: block;
       margin-bottom: 10px;
-      margin-left: auto;
-      margin-right: auto;
+      //margin-left: auto;
+      //margin-right: auto;
       &:last-child{
         margin-bottom: 0;
       }

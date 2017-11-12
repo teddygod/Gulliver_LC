@@ -3,9 +3,9 @@
 		color: #fff;
 		text-align: left;
 		padding-left: 25px;
-	  	width: 87%;
+	  	width: 65%;
 		line-height: $header-height;
-		font-size: 40px;
+		font-size: 30px;
 
 		@include media-down(sm) {
 			line-height: $header-height-xs;

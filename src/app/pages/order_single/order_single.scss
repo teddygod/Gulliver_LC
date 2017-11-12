@@ -1,1 +1,7 @@
 //SCSS file
+.orders_intem {
+	min-width: 15%;
+	@include media-down(md) {
+		min-width: 38%;
+	}
+}

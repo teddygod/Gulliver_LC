@@ -7,8 +7,8 @@ pagename: order_single
 	<div class="row">
 		<div class="col-md-12 order_single">
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-10 order_answer">
+				<div class="col-0 col-sm-2"></div>
+				<div class="col-12 col-sm-10 order_answer">
 					<div class="card card-default">
 						<div class="card-header">
 							<div class="w-100 header-block justify-content-between">
@@ -17,11 +17,107 @@ pagename: order_single
 							</div>
 						</div>
 						<div class="card-block">
+							<div class="desc_orders flex-row">
+								<div class="orders_intem d-none d-sm-block">
+									<p class="mb-2">Тип заявки </p>
+									<p class="mb-2">Дата/Час </p>
+									<p class="mb-2">ФИО заявника </p>
+									<p class="mb-2">Компания </p>
+									<p class="mb-2">Вид работ</p>
+									<p class="mb-2">Департамент </p>
+									<p class="mb-2">Ценности </p>
+								</div>
+								<div class="orders_intem d-none d-sm-block">
+									<p class="mb-2">Материальный пропуск</p>
+									<p class="mb-2">5.04.2017 17:35</p>
+									<p class="mb-2">Иванов Иван Кукушкин</p>
+									<p class="mb-2">ТОВ PULL&BEAR</p>
+									<p class="mb-2">Ввоз материалов</p>
+									<p class="mb-2">Отдел маркетинга и рекламы</p>
+									<p class="mb-2">Банер</p>
+								</div>
 
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.</p>
+								<div class="orders_intem d-block d-sm-none">
+									<p class="mb-2 font-weight-bold">Тип заявки: <span class=" font-weight-normal">Материальный пропуск</span></p>
+									<p class="mb-2 font-weight-bold">Дата/Час: <span class=" font-weight-normal">5.04.2017 17:35</span></p>
+									<p class="mb-2 font-weight-bold">ФИО заявника: <span class=" font-weight-normal">Иванов Иван Кукушкин</span></p>
+									<p class="mb-2 font-weight-bold">Компания: <span class=" font-weight-normal">ТОВ PULL&BEAR</span></p>
+									<p class="mb-2 font-weight-bold">Вид работ: <span class=" font-weight-normal">Ввоз материалов</span></p>
+									<p class="mb-2 font-weight-bold">Департамент: <span class=" font-weight-normal">Отдел маркетинга и рекламы</span></p>
+									<p class="mb-2 font-weight-bold">Ценности: <span class=" font-weight-normal">Банер</span></p>
+								</div>
+							</div>
 						</div>
-						<div class="card-footer"> Card Footer </div>
+						<div class="card-footer ">
+							<div class="row pagination_with_btn_row justify-content-center justify-content-sm-between">
+								<a href="#" class="ml-3 mb-3 mb-sm-0 text-center text-sm-left"><i class="fa fa-picture-o mr-3"></i> визуализация.jpg</a>
+								<div class="tac_row sm_tar_row">
+									<a class="modal_trigger no" href="order_single.html">
+										<button class="btn btn_type_f">Скачать PDF пропуск</button>
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="card card-default">
+						<div class="card-header">
+							<div class="w-100 header-block justify-content-between">
+								<p class="title">Иван Иванов (менеджера по аренде) </p>
+								<p class="title text-right float-right">25.11.16 10:32</p>
+							</div>
+						</div>
+						<div class="card-block">
+							<div class="desc_orders flex-row">
+
+								<p>Здравствуйте!<br />
+									Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий
+									безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
+									изменений пять веков</p>
+							</div>
+						</div>
+						<!--<div class="card-footer ">
+							<div class="row pagination_with_btn_row">
+								<a href="#" class="ml-3"><i class="fa fa-picture-o mr-3"></i> визуализация.jpg</a>
+								<div class="tac_row sm_tar_row">
+									<a class="modal_trigger no" href="order_single.html">
+										<button class="btn btn_type_f">Скачать PDF пропуск</button>
+									</a>
+								</div>
+							</div>
+						</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-0 col-sm-2"></div>
+				<div class="col-12 col-sm-10">
+					<form action="" class="add_coment">
+						<div class="form-group">
+							<textarea name="" id="" class="form-control w-100" rows="10" placeholder="Введите текст"></textarea>
+						</div>
+						<div class="form-group float-right text-right">
+							<div class="form-inline">
+								<div class="form-group form-group-upload text-left">
+									<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
+										<input type="file">
+										<span class="form_upload_plus mr-1">+</span>
+										<span class="form_upload_text">
+											Прикрепить файл
+										</span>
+									</label>
+								</div>
+								<div class="tac_row sm_tar_row">
+									<a class="modal_trigger no" href="order_single.html">
+										<button class="btn btn_type_f">Отправить</button>
+									</a>
+								</div>
+							</div>
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>

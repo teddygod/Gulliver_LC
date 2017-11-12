@@ -16,7 +16,7 @@
   //width: $sidebar-width;
   width: 230px;
   margin: 0 auto 20px;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
   @include media-down(sm) {
 
   }
@@ -27,7 +27,7 @@
     }
   }
 
-  @include media-down(md) {
+  @include media-down(lg) {
     // position: absolute;
     transition: left 0.3s ease;
     left: -$sidebar-width;

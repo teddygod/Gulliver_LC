@@ -10,7 +10,7 @@
 	z-index: 20;
 
 
-	@include media-down(md) {
+	@include media-down(lg) {
 		position: fixed;
 		left: -$sidebar-width;
 	}
@@ -27,11 +27,15 @@
 	.sidebar-container {
 		position: absolute;
 		top: 0;
-		bottom: 51px;
+		bottom: 68px;
 		width: 100%;
 		left: 0;
 		overflow-y: auto;
 		overflow-x: hidden;
+		@include media-down(md) {
+			top: 7px;
+			bottom: 68px;
+		}
 
 		&::-webkit-scrollbar-track {
 			background-color: darken($sidebar-color-primary, 6.5%);
@@ -40,7 +44,7 @@
 
 	.sidebar-menu {
 
-		font-size: 22px;
+		font-size: 1.125rem;
 		list-style: none;
 		margin: 0;
 		padding: 0;

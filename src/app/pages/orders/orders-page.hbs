@@ -1,8 +1,153 @@
 ---
 layout: app/app-layout
 pagename: orders
+orders:
+  - number_order: 1
+    date_order: 12.11.17
+    type_order: Материальный пропуск
+    event_order: В работе
+    count_order: 4
+    new_order: false
+    new_count: 0
+  - number_order: 2
+    date_order: 10.10.17
+    type_order: Гостевой пропуск
+    event_order: Отправлена
+    count_order: 5
+    new_order: false
+    new_count: 0
+  - number_order: 3
+    date_order: 12.11.17
+    type_order: Временный пропуск
+    event_order: Завершена положительно
+    count_order: 7
+    new_order: true
+    new_count: 11
+  - number_order: 4
+    date_order: 10.10.17
+    type_order: Постоянный пропуск
+    event_order: Тема документа4
+    count_order: 1
+    new_order: true
+    new_count: 1
+  - number_order: 5
+    date_order: 12.11.17
+    type_order: Материальный пропуск
+    event_order: В работе
+    count_order: 8
+    new_order: false
+    new_count: 0
+  - number_order: 6
+    date_order: 10.10.17
+    type_order: Гостевой пропуск
+    event_order: Отправлена
+    count_order: 3
+    new_order: false
+    new_count: 0
+  - number_order: 7
+    date_order: 12.11.17
+    type_order: Временный пропуск
+    event_order: Завершена положительно
+    count_order: 2
+    new_order: true
+    new_count: 15
+  - number_order: 8
+    date_order: 10.10.17
+    type_order: Постоянный пропуск
+    event_order: Тема документа4
+    count_order: 12
+    new_order: true
+    new_count: 3
+  - number_order: 9
+    date_order: 12.11.17
+    type_order: Материальный пропуск
+    event_order: В работе
+    count_order: 4
+    new_order: false
+    new_count: 0
+  - number_order: 10
+    date_order: 10.10.17
+    type_order: Гостевой пропуск
+    event_order: Отправлена
+    count_order:
+    new_order: false
+    new_count: 0
+  - number_order: 10
+    date_order: 12.11.17
+    type_order: Материальный пропуск
+    event_order: В работе
+    count_order: 4
+    new_order: false
+    new_count: 0
+  - number_order: 11
+    date_order: 10.10.17
+    type_order: Гостевой пропуск
+    event_order: Отправлена
+    count_order: 5
+    new_order: false
+    new_count: 0
+  - number_order: 12
+    date_order: 12.11.17
+    type_order: Временный пропуск
+    event_order: Завершена положительно
+    count_order: 7
+    new_order: true
+    new_count: 11
+  - number_order: 13
+    date_order: 10.10.17
+    type_order: Постоянный пропуск
+    event_order: Тема документа4
+    count_order: 1
+    new_order: true
+    new_count: 1
+  - number_order: 14
+    date_order: 12.11.17
+    type_order: Материальный пропуск
+    event_order: В работе
+    count_order: 8
+    new_order: false
+    new_count: 0
+  - number_order: 15
+    date_order: 10.10.17
+    type_order: Гостевой пропуск
+    event_order: Отправлена
+    count_order: 3
+    new_order: false
+    new_count: 0
+  - number_order: 16
+    date_order: 12.11.17
+    type_order: Временный пропуск
+    event_order: Завершена положительно
+    count_order: 2
+    new_order: true
+    new_count: 15
+  - number_order: 17
+    date_order: 10.10.17
+    type_order: Постоянный пропуск
+    event_order: Тема документа4
+    count_order: 12
+    new_order: true
+    new_count: 3
+  - number_order: 18
+    date_order: 12.11.17
+    type_order: Материальный пропуск
+    event_order: В работе
+    count_order: 4
+    new_order: false
+    new_count: 0
+  - number_order: 19
+    date_order: 10.10.17
+    type_order: Гостевой пропуск
+    event_order: Отправлена
+    count_order:
+    new_order: false
+    new_count: 0
 ---
-
+<div class="tac_row sm_tar_row float-right">
+	<a class="modal_trigger" href="#" data-toggle="modal" data-target="#create_order_for">
+		<button class="btn btn_type_f">Подать заявку</button>
+	</a>
+</div>
 <div class="title-block">
 	<h1 class="title">
 		Заявки
@@ -10,8 +155,8 @@ pagename: orders
 </div>
 <div class="form-group underlined">
 	<form action="">
-		<div class="input-group w-25 border border-dark border-left-0 border-right-0 border-top-0 ">
-			<input type="text" class="form-control border-0 " placeholder="Поиск">
+		<div class="input-group col-sm-8 col-md-3 border border-dark border-left-0 border-right-0 border-top-0 ">
+			<input type="text" class="form-control border-0 font-weight-normal" placeholder="Поиск">
 			<span class="input-group-addon border-0 bg-transparent color-secondary"><i class="fa fa-search"></i></span>
 		</div>
 	</form>
@@ -22,9 +167,9 @@ pagename: orders
 			<div class="table-flip-scroll">
 				<table class="table flip-content t_doc">
 					<thead class="flip-header">
-						<tr>
-							<th>№</th>
-							<th>
+						<tr class="text-center">
+							<th class="text-center">№</th>
+							<th class="text-center">
 								<select name="filter_date" class="table_filter">
 									<option value="hidden">Дата подачи заявки</option>
 									<option value="24.11.16">24.11.16</option>
@@ -32,6 +177,12 @@ pagename: orders
 									<option value="22.11.16">22.11.16</option>
 									<option value="21.11.16">21.11.16</option>
 								</select>
+								<div class="form-group d-none">
+									<div class="form-inline flex-row justify-content-around">
+										<input type="text" class="form-control underlined col-3 bg-transparent w-50" placeholder="Вiд">
+										<input type="text" class="form-control underlined col-3 bg-transparent w-50" placeholder="До">
+									</div>
+								</div>
 							</th>
 							<th>
 								<select name="filter_doc_type" class="table_filter">
@@ -54,155 +205,34 @@ pagename: orders
 							<th>К-во постов</th>
 						</tr>
 					</thead>
-					<tbody>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">12.11.16</td>
-							<td>Материальный пропуск</td>
-							<td>В работе</td>
+					<tbody class="orders_tab">
+					{{#each orders}}
+						<tr  onClick="window.location='/order_single.html'" style="cursor:pointer" class="orders_item " id="orders_item-{{number_order}}" style="cursor: pointer">
+							<td class="text-center">{{number_order}}</td>
+							<td class="text-center">{{date_order}}</td>
+							<td>{{type_order}}</td>
+							<td>{{event_order}}</td>
 							<td>
-								<p class="p-0 m-0 orders_count">4<sup class="new_not">1</sup></p>
+								<a href="order_single.html" style="text-decoration: none"><p class="p-0 m-0 orders_count">{{count_order}} {{#if new_order}}<sup class="new_not">{{new_count}}</sup>{{/if}}</p></a>
 							</td>
 						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">15.11.16</td>
-							<td>Гостевой пропуск</td>
-							<td>Отправлена</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4<sup class="new_not">44</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">34.11.16</td>
-							<td>Постоянный пропуск</td>
-							<td>Завершена положительно</td>
-							<td>
-								<p class="p-0 m-0 orders_count">34<sup class="new_not">12</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">34.11.16</td>
-							<td>Временный пропуск</td>
-							<td>Завершена отрицательно</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">12.11.16</td>
-							<td>Материальный пропуск</td>
-							<td>В работе</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4<sup class="new_not">1</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">15.11.16</td>
-							<td>Гостевой пропуск</td>
-							<td>Отправлена</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4<sup class="new_not">44</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">34.11.16</td>
-							<td>Постоянный пропуск</td>
-							<td>Завершена положительно</td>
-							<td>
-								<p class="p-0 m-0 orders_count">34<sup class="new_not">12</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">34.11.16</td>
-							<td>Временный пропуск</td>
-							<td>Завершена отрицательно</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">12.11.16</td>
-							<td>Материальный пропуск</td>
-							<td>В работе</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4<sup class="new_not">1</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">15.11.16</td>
-							<td>Гостевой пропуск</td>
-							<td>Отправлена</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4<sup class="new_not">44</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">34.11.16</td>
-							<td>Постоянный пропуск</td>
-							<td>Завершена положительно</td>
-							<td>
-								<p class="p-0 m-0 orders_count">34<sup class="new_not">12</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">34.11.16</td>
-							<td>Временный пропуск</td>
-							<td>Завершена отрицательно</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4</p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">12.11.16</td>
-							<td>Материальный пропуск</td>
-							<td>В работе</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4<sup class="new_not">1</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">15.11.16</td>
-							<td>Гостевой пропуск</td>
-							<td>Отправлена</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4<sup class="new_not">44</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">34.11.16</td>
-							<td>Постоянный пропуск</td>
-							<td>Завершена положительно</td>
-							<td>
-								<p class="p-0 m-0 orders_count">34<sup class="new_not">12</sup></p>
-							</td>
-						</tr>
-						<tr>
-							<td class="center">1567</td>
-							<td class="center">34.11.16</td>
-							<td>Временный пропуск</td>
-							<td>Завершена отрицательно</td>
-							<td>
-								<p class="p-0 m-0 orders_count">4</p>
-							</td>
-						</tr>
+					{{/each}}
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</div>
-
+	<div class="row pagination_with_btn_row">
+		<div class="tac_row sm_tar_row">
+			<a class="modal_trigger no" href="order_single.html" hidden>
+				<button class="btn btn_type_d">Добавить акцию</button>
+			</a>
+		</div>
+		<ul class="section_pagination">
+			<li><a href="#">1</a></li>
+			<li><a href="#">2</a></li>
+			<li><a href="#">3</a></li>
+			<li class="active"><a href="#">4</a></li>
+		</ul>
+	</div>
 </section>

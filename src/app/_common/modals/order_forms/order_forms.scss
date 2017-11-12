@@ -3,7 +3,8 @@
 .order_form {
 	.modal-dialog {
 		width: 100%;
-		@media (min-width: 576px) {
+		max-width: 720px;
+		@include media-down(md) {
 			max-width: 720px;
 			margin: 30px auto;
 		}

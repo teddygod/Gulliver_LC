@@ -16,9 +16,12 @@
             margin-bottom: 0;
         }
     }
-input, select, textarea {
-	padding-left: 10px !important;
-}
+	input, textarea {
+		padding-left: 10px !important;
+	}
+	select {
+		padding-left: 6px !important;
+	}
 	.radio:checked + span:before, .checkbox:checked + span:before {
 		color: $color-checkbox;
 	}

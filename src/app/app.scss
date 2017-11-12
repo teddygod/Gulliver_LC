@@ -47,7 +47,7 @@
 		}
 	}
 
-	@include media-down(md) {
+	@include media-down(lg) {
 		padding-left: 0;
 		// background-color: #ccc;
 		// left: -$sidebar-width;
@@ -56,7 +56,7 @@
 
 	&.sidebar-open {
 		// Disable content scrolling when sidebar is open
-		@include media-down(md) {
+		@include media-down(lg) {
 			left: 0;
 			// position: absolute;
 			// height: 100%;

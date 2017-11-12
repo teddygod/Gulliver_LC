@@ -6,11 +6,11 @@
 
 	.btn.header-btn {
 		background-color: transparent;
-		border: 2px solid lighten($color-primary, 10%);
+		border: 2px solid $color-primary;
 		color: lighten($color-btn-text, 2%);
 		margin: 0 5px;
 		border-radius: 0;
-		font-size: 22px;
+		font-size: 1.125rem;
 		// border-radius: 25px;
 
 		&:hover,
