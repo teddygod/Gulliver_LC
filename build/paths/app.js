@@ -33,7 +33,7 @@ var destDir 	= config.destDir;
 
 	exports.styles = [
 		srcDir + "/_main.scss",
-		srcDir + "scss/**/*.scss",
+		srcDir + "/**/!(_main|_variables|*-theme)*.scss",
 	];
 
 /***********************************************
