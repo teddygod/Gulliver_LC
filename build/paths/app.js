@@ -13,7 +13,7 @@ var destDir 	= config.destDir;
 	/*
 		Specifiing the source this way means:
 
-		"take all .js files except /_main/main.js file 
+		"take all .js files except /_main/main.js file
 		and then take /_main/main.js file"
 
 		This ensures that main.js file is loaded in the end.
@@ -33,7 +33,7 @@ var destDir 	= config.destDir;
 
 	exports.styles = [
 		srcDir + "/_main.scss",
-		srcDir + "/**/!(_main|_variables|*-theme)*.scss",
+		srcDir + "scss/**/*.scss",
 	];
 
 /***********************************************
@@ -45,7 +45,7 @@ var destDir 	= config.destDir;
 /***********************************************
 *		Application template files
 ************************************************/
-	
+
 	/*
 		All template files in application.
 		Those should registered as handlebars partials
@@ -71,8 +71,8 @@ var destDir 	= config.destDir;
 ************************************************/
 
 	/*
-		Layouts are used for "wrapping" the content of individual pages with common elements, 
-		such as the <head></head> and footer sections, which usually contain necessities 
+		Layouts are used for "wrapping" the content of individual pages with common elements,
+		such as the <head></head> and footer sections, which usually contain necessities
 		such as <link> and <script> tags.
 	*/
 

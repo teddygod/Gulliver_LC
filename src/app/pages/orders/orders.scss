@@ -14,5 +14,9 @@
 		right: -11px;
 		font-weight: bold;
 		color: #000;
+		@include media-down(lg) {
+			top: -23px;
+			right: -23px;
+		}
 	}
 }

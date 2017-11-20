@@ -1,39 +1,46 @@
 {{!----}}
 
-<div class="table-flip-scroll">
+<div class="table-responsive">
 	<table class="table flip-content t_doc">
 		<thead class="flip-header">
-		<tr>
-			<th>№</th>
-			<th>
-				<select size="1" name="filter_date" class="table_filter">
-					<option value="hidden">Дата подачи заявки</option>
-					<option value="24.11.16">24.11.16</option>
-					<option value="23.11.16">23.11.16</option>
-					<option value="22.11.16">22.11.16</option>
-					<option value="21.11.16">21.11.16</option>
-				</select>
-			</th>
-			<th>
-				<select size="1" name="filter_doc_type" class="table_filter">
-					<option value="hidden">Тип заявки</option>
-					<option value="mark">Материальный пропуск</option>
-					<option value="rules">Гостевой пропуск</option>
-					<option value="rent">Временный пропуск</option>
-					<option value="else">Постоянный пропуск</option>
-				</select>
-			</th>
-			<th>
-				<select size="1" name="filter_doc_topic" class="table_filter">
-					<option value="hidden">Статус</option>
-					<option value="mark">В работе</option>
-					<option value="rules">Отправлена</option>
-					<option value="rent">Завершена положительно</option>
-					<option value="else">Тема документа4</option>
-				</select>
-			</th>
-			<th>К-во постов</th>
-		</tr>
+			<tr>
+				<th>№</th>
+				<th>
+					<select size="1" name="filter_date" class="table_filter">
+						<option value="hidden">Дата подання Заявки</option>
+						<option value="24.11.16">24.11.16</option>
+						<option value="23.11.16">23.11.16</option>
+						<option value="22.11.16">22.11.16</option>
+						<option value="21.11.16">21.11.16</option>
+					</select>
+				</th>
+				<th>
+					<select size="1" name="filter_doc_type" class="table_filter">
+						<option value="hidden">Тип Заявки</option>
+						<option value="mark">Матеріальна перепустка</option>
+						<option value="rules">Постійна перепустка</option>
+						<option value="rent">Гостьова перепустка</option>
+						<option value="else">Тимчасова перепустка</option>
+						<option value="else1">Допуск на територію/виконання робіт</option>
+						<option value="else2">Оформлення вітрин</option>
+						<option value="else3">Розміщення інформації</option>
+						<option value="else4">Замовлення реклами в Gulliver Times</option>
+						<option value="else5">Проведення фото/відео зйомки</option>
+						<option value="else6">Підключення інтернету/телефону</option>
+						<option value="else7">Скарга/пропозиція</option>
+					</select>
+				</th>
+				<th>
+					<select size="1" name="filter_doc_topic" class="table_filter">
+						<option value="hidden">Статус</option>
+						<option value="mark">В роботі</option>
+						<option value="rules">Відправлена</option>
+						<option value="rent">Погоджена</option>
+						<option value="else">Відмовлена</option>
+					</select>
+				</th>
+				<th>К-сть постів</th>
+			</tr>
 		</thead>
 		<tbody>
 		{{#each orders}}

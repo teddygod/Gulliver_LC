@@ -34,5 +34,34 @@
 		background: #d4d4d4;
 	}
 }
+.bg-header {background-color: #eaeef1;}
 
+td.disabled.day {
+	color: #939393;
+	background: #f2f2f2;
+}
 
+td.day {
+	cursor: pointer;
+}
+
+table.table-condensed {
+	padding: 0 .4rem;
+}
+
+div[class^="datepicker-"] {
+	padding: 0 1rem;
+	max-width: 100%;
+}
+
+td.active.day {
+	background: $color-primary;
+}
+th.dow {
+	font-size: 0.6rem;
+	cursor: pointer;
+}
+
+th {
+	cursor: pointer;
+}

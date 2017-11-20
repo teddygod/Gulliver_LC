@@ -1,160 +1,41 @@
-$(function () {
-	$('#datepicker1').datepicker({
-		locale: 'ua',
-		format: 'yyyy/mm/dd',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		}
-	});
-	$('#datepicker2').datepicker({
-		locale: 'ua',
-		format: 'yyyy/mm/dd',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		},
-		useCurrent: false //Important! See issue #1075
-	});
-	$("#datepicker1").on("dp.change", function (e) {
-		$('#datepicker2').data("DateTimePicker").minDate(e.date);
-	});
-	$("#datepicker2").on("dp.change", function (e) {
-		$('#datepicker1').data("DateTimePicker").maxDate(e.date);
-	});
-
-	 $('#datetimepicker1').datetimepicker({
-		 locale: 'ua',
-		 icons: {
-			 time: "fa fa-clock-o",
-			 date: "fa fa-calendar",
-			 up: "fa fa-arrow-up",
-			 down: "fa fa-arrow-down"
-		 }
-	 });
-	 $('#datetimepicker2').datetimepicker({
-		 locale: 'ua',
-		 icons: {
-			 time: "fa fa-clock-o",
-			 date: "fa fa-calendar",
-			 up: "fa fa-arrow-up",
-			 down: "fa fa-arrow-down"
-		 }
-	 });
+"use strict";
+$.fn.datepicker.dates['ua'] = {
+	days: ["Неділя", "Понеділок", "Вівторок", "Середа", "Четверг", "П\'ятниця", "Субота"],
+	daysShort: ['нд', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'],
+	daysMin: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+	months: ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"],
+	monthsShort: ["Січ", "Лют", "Бер", "Квіт", "Трав", "Черв", "Лип", "Серп", "Вер", "Жовт", "Лист", "Груд"],
+	today: "Сьогодні",
+	clear: "Видалити",
+	format: "mm/dd/yyyy",
+	titleFormat: "MM yyyy", /* Leverages same syntax as 'format' */
+	weekStart: 1
+};
+$('#basicDatepicker .time, #basicDatepicker-1 .time, #basicDatepicker-2 .time').timepicker({
+	'showDuration': true,
+	'timeFormat': 'H:i'
 });
-$(function () {
-	$('#datepicker11').datepicker({
-		locale: 'ua',
-		format: 'yyyy/mm/dd',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		}
-	});
-	$('#datepicker12').datepicker({
-		locale: 'ua',
-		format: 'yyyy/mm/dd',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		},
-		useCurrent: false //Important! See issue #1075
-	});
-	$("#datepicker11").on("dp.change", function (e) {
-		$('#datepicker12').data("DateTimePicker").minDate(e.date);
-	});
-	$("#datepicker12").on("dp.change", function (e) {
-		$('#datepicker11').data("DateTimePicker").maxDate(e.date);
-	});
 
-	$('#datetimepicker11').datetimepicker({
-		locale: 'ua',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		}
-	});
-	$('#datetimepicker12').datetimepicker({
-		locale: 'ua',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		}
-	});
-
-
-	$('#datepicker_add_inform').datepicker({
-		locale: 'ua',
-		format: 'yyyy/mm/dd',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		}
-	});
-
+$('#basicDatepicker .date, #basicDatepicker-1 .date, #basicDatepicker-2 .date, #basicDatepicker-3 .date').datepicker({
+	'format': 'dd/mm/yyyy',
+	'startDate': '0',
+	'language': 'ua',
+	'autoclose': true
 });
-$(function () {
-	$('#datepicker21').datepicker({
-		locale: 'ua',
-		format: 'yyyy/mm/dd',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		}
-	});
-	$('#datepicker22').datepicker({
-		locale: 'ua',
-		format: 'yyyy/mm/dd',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		},
-		useCurrent: false //Important! See issue #1075
-	});
-	$("#datepicker21").on("dp.change", function (e) {
-		$('#datepicker22').data("DateTimePicker").minDate(e.date);
-	});
-	$("#datepicker22").on("dp.change", function (e) {
-		$('#datepicker21').data("DateTimePicker").maxDate(e.date);
-	});
-
-	$('#datetimepicker21').datetimepicker({
-		locale: 'ua',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		}
-	});
-	$('#datetimepicker22').datetimepicker({
-		locale: 'ua',
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-arrow-up",
-			down: "fa fa-arrow-down"
-		}
-	});
+$('#basicDatepicker-4 .date').datepicker({
+	'format': 'dd/mm/yyyy',
+	'language': 'ua',
+	'autoclose': true
 });
+
+// initialize datepair
+var basicDatepickerEl = document.getElementById('basicDatepicker');
+var basicDatepickerEl_1 = document.getElementById('basicDatepicker-1');
+var basicDatepickerEl_2 = document.getElementById('basicDatepicker-2');
+var basicDatepickerEl_3 = document.getElementById('basicDatepicker-3');
+var basicDatepickerEl_4 = document.getElementById('basicDatepicker-4');
+var datepair = new Datepair(basicDatepickerEl, basicDatepickerEl_1, basicDatepickerEl_2, basicDatepickerEl_3, basicDatepickerEl_4);
+
 
 		$("#department").on("change", function(){
 			var department = $("#department").val(),

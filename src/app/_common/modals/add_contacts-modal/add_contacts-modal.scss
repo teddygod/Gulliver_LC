@@ -4,6 +4,12 @@
 		padding-left: 10%;
 		padding-right: 10%;
 		@include media-down(md) {
+			padding-top: 2.666rem;
+			padding-left: 6%;
+			padding-right: 6%;
+		}
+		@include media-down(sm) {
+			padding-top: 3.666rem;
 			padding-left: 6%;
 			padding-right: 6%;
 		}

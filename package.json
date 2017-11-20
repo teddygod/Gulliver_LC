@@ -1,22 +1,21 @@
 {
   "name": "gulliver_lc",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "ModularAdmin: Free Dashboard Theme; html version",
   "repository": {
     "type": "git",
-    "url": "git+http://95.164.52.226:3001/Yuriy/guliver-pa"
+    "url": "git+https://github.com/teddygod/Gulliver_LC.git"
   },
   "author": "teddygod",
   "license": "ISC",
   "bugs": {
-    "url": "http://95.164.52.226:3001/Yuriy/guliver-pa/issues"
+    "url": "https://github.com/teddygod/Gulliver_LC.git"
   },
-  "homepage": "http://95.164.52.226:3001/Yuriy/guliver-pa",
+  "homepage": "https://github.com/teddygod/Gulliver_LC.git",
   "dependencies": {
     "bower": "^1.8.2",
     "gulp-cli": "^1.4.0",
     "gulp-install": "^1.1.0",
-    "gulp-sourcemaps": "^2.6.1",
     "jquery-datetimepicker": "^2.5.11",
     "opencollective": "^1.0.3"
   },
@@ -54,8 +53,8 @@
   },
   "collective": {
     "type": "Sproduccione",
-    "url": "http://95.164.52.226:3001/Sproduccion",
-    "logo": "http://95.164.52.226:3001/Sproduccion/logo.txt"
+    "url": "https://github.com/teddygod/Gulliver_LC.git",
+    "logo": "https://avatars1.githubusercontent.com/u/7117681?s=460&v=4"
   },
   "main": "index.js"
 }

@@ -1,79 +1,55 @@
 ---
 layout: app/app-layout
 pagename: contacts_people
+
+contacts:
+  - photo: /images/people_card_woman.png
+    name: Ирина Петрова
+    position: Бухгалтер
+    email: info@info.com.ua
+    phone: +38 093 555 55 55
+  - photo: /images/people_card_woman.png
+    name: Ирина Петрова
+    position: Бухгалтер
+    email: info@info.com.ua
+    phone: +38 093 555 55 55
+  - photo: /images/people_card_woman.png
+    name: Ирина Петрова
+    position: Бухгалтер
+    email: info@info.com.ua
+    phone: +38 093 555 55 55
+  - photo: /images/people_card_woman.png
+    name: Ирина Петрова
+    position: Бухгалтер
+    email: info@info.com.ua
+    phone: +38 093 555 55 55
 ---
 
 <section class="section">
     <div class="row">
-        <!--<div class="col-md-12">-->
-            <!--<div class="contacts_people_holder">-->
-                <!--<div class="contacts_people_flex_container">-->
+		{{#each contacts}}
                     <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xs-c">
                         <div class="people_card contacts_people_item ">
                             <div class="people_card_img">
-                                <img src="/images/people_card_woman.png" alt="">
+                                <img src="{{photo}}" alt="">
                                 <a class="people_card_cross" href="#" data-toggle="modal" data-target="#delete_contacts-modal"></a>
                             </div>
                             <div class="people_card_content">
-                                <span class="people_card_name">Ирина Петрова</span>
-                                <span class="people_card_position">Бухгалтер</span>
-                                <span class="people_card_e-mail">info@info.com.ua</span>
-                                <span class="people_card_phone">+38 093 555 55 55</span>
+                                <span class="people_card_name">{{name}}</span>
+                                <span class="people_card_position">{{position}}</span>
+                                <span class="people_card_e-mail">{{email}}</span>
+                                <span class="people_card_phone">{{phone}}</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xs-c">
-                        <div class="people_card contacts_people_item ">
-                            <div class="people_card_img">
-                                <img src="/images/people_card_woman.png" alt="">
-                                <a class="people_card_cross" href="#" data-toggle="modal" data-target="#delete_contacts-modal"></a>
-                            </div>
-                            <div class="people_card_content">
-                                <span class="people_card_name">Ирина Петрова</span>
-                                <span class="people_card_position">Бухгалтер</span>
-                                <span class="people_card_e-mail">info@info.com.ua</span>
-                                <span class="people_card_phone">+38 093 555 55 55</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xs-c">
-                        <div class="people_card contacts_people_item ">
-                            <div class="people_card_img">
-                                <img src="/images/people_card_woman.png" alt="">
-                                <a class="people_card_cross" href="#" data-toggle="modal" data-target="#delete_contacts-modal"></a>
-                            </div>
-                            <div class="people_card_content">
-                                <span class="people_card_name">Ирина Петрова</span>
-                                <span class="people_card_position">Бухгалтер</span>
-                                <span class="people_card_e-mail">info@info.com.ua</span>
-                                <span class="people_card_phone">+38 093 555 55 55</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xs-c">
-                        <div class="people_card contacts_people_item ">
-                            <div class="people_card_img">
-                                <img src="/images/people_card_woman.png" alt="">
-                                <a class="people_card_cross" href="#" data-toggle="modal" data-target="#delete_contacts-modal"></a>
-                            </div>
-                            <div class="people_card_content">
-                                <span class="people_card_name">Ирина Петрова</span>
-                                <span class="people_card_position">Бухгалтер</span>
-                                <span class="people_card_e-mail">info@info.com.ua</span>
-                                <span class="people_card_phone">+38 093 555 55 55</span>
-                            </div>
-                        </div>
-                    </div>
-                <!--</div>-->
-            <!--</div>-->
+			{{/each}}
+
         <div class="col-md-12">
             <div class="tac_row sm_tar_row">
                 <a class="modal_trigger" href="#" data-toggle="modal" data-target="#add_contacts-modal">
-                    <button class="btn btn_type_a">Добавить</button>
+                    <button class="btn btn_type_a">Додати працiвника</button>
                 </a>
             </div>
         </div>
-
-        <!--</div>-->
     </div>
 </section>

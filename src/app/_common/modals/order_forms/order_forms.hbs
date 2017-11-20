@@ -48,28 +48,33 @@
 							<option value="3">TOB BEAR (башта А, порерх 1)</option>
 							<option value="4">TOB PULL & BEAR (башта В, порерх 2)</option>
 						</select>
-						<div data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap date_time text-left">
-							<label for="datepicker1" class="form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-								<input type="text" id="datepicker1" class="form-control col-10 underlined mb-0  date" placeholder="Вiд 2017/03/15">
-								<span class="col-1 fa fa-calendar"></span>
-							</label>
-							<i class="col-1"></i>
-							<label for="datepicker2" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-								<input type="text" id="datepicker2" class="form-control col-10 underlined mb-0  date" placeholder="До 2017/03/15">
-								<span class="col-2 fa fa-calendar"></span>
-							</label>
-							<i class="col-1"></i>
-							<label for="datetimepicker1" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-								<input type="text" id="datetimepicker1" class="form-control col-10 underlined text-center mb-0" placeholder="11:30">
-								<span class="col-2 fa fa-clock-o"></span>
-							</label>
-							<i class="col-1"></i>
-							<label for="datetimepicker2" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-								<input type="text" id="datetimepicker2" class="form-control col-10 underlined text-center mb-0" placeholder="11:30">
-								<span class="col-2 fa fa-clock-o"></span>
-							</label>
 
+						<!--DATE-TIME-PICKER-RANGE-->
+						<div id="basicDatepicker" data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap date_time text-left">
+							<div class="start__daretime col-12 col-md-5 p-0">
+								<label for="datepicker1" class="form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+									<input type="text" id="datepicker1" class="date start form-control col-11 underlined text-center mb-0" placeholder="Вiд 15/11/2017">
+									<span class="col-1 fa fa-calendar"></span>
+								</label>
+								<label for="datetimepicker1" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+									<input type="text" id="datetimepicker1" class="time start form-control col-11 underlined text-center mb-0" placeholder="11:30">
+									<span class="col-1 fa fa-clock-o"></span>
+								</label>
+							</div>
+							<i class="col-12 col-md-1"></i>
+							<div class="end__daretime col-12 col-md-5 p-0">
+								<label for="datepicker2" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+									<input type="text" id="datepicker2" class="date end form-control col-11 underlined text-center mb-0" placeholder="До 15/11/2017">
+									<span class="col-1 fa fa-calendar"></span>
+								</label>
+								<label for="datetimepicker2" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+									<input type="text" id="datetimepicker2" class="time end form-control col-11 underlined text-center mb-0" placeholder="11:30">
+									<span class="col-1 fa fa-clock-o"></span>
+								</label>
+							</div>
 						</div>
+						<!--DATE-TIME-PICKER-RANGE-->
+
 						<div class="form-group owner_order">
 							<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined hiden contract_numb" data-name="contract_numb" placeholder="Номер та дата договору" readonly>
 							<select size="1" data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="owner_order" class="form-control form-control-lg underlined" required>
@@ -118,14 +123,14 @@
 									<label>
 										<input type="submit">
 										<span class="form_upload_plus">+</span>
-										<span class="form_upload_text">ДОБАВИТЬ ЦЕННОСТЬ</span>
+										<span class="form_upload_text">Додати цінність</span>
 									</label>
 								</div>
 							</div>
 							<div class="form-group permanent_badge">
 								<div class="form-group goods goods_item-1">
 									<div class="title-block text-left">
-										<h4 class="title_goods-block font-weight-bold text-uppercase">СОТРУДНИКИ</h4>
+										<h4 class="title_goods-block font-weight-bold text-uppercase">Працівники</h4>
 									</div>
 								</div>
 								<div class="form-group goods goods_item-1">
@@ -149,37 +154,37 @@
 								<div data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap text-left">
 
 									<div class="form-group form-inline col-6 pl-2">
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class=" text-left justify-content-start">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 1</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 2</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 3</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="text-left justify-content-start">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 4</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class=" text-left justify-content-start">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 5</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 6</span>
@@ -187,37 +192,37 @@
 										</div>
 									</div>
 									<div class="form-group form-inline col-6 p-0">
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 7</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 8</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 9</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 10</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 11</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 12</span>
@@ -239,15 +244,15 @@
 									<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
 										<input type="submit">
 										<span class="form_upload_plus">+</span>
-										<span class="form_upload_text">ДОБАВИТЬ СОТРУДНИКА</span>
+										<span class="form_upload_text">Додати працівника</span>
 									</label>
 								</div>
 							</div>
 							<div class="form-group guest_badge">
-								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="count-day" placeholder="Количество пропусков" readonly>
+								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="count-day" placeholder="Кількість перепусток" readonly>
 								<div class="form-group goods goods_item-1">
 									<div class="title-block text-left">
-										<h4 class="title_goods-block font-weight-bold text-uppercase">СОТРУДНИКИ</h4>
+										<h4 class="title_goods-block font-weight-bold text-uppercase">Працівники</h4>
 									</div>
 								</div>
 								<div class="form-group goods goods_item-1">
@@ -262,15 +267,15 @@
 									<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
 										<input type="submit">
 										<span class="form_upload_plus">+</span>
-										<span class="form_upload_text">ДОБАВИТЬ СОТРУДНИКА</span>
+										<span class="form_upload_text">Додати працівника</span>
 									</label>
 								</div>
 							</div>
 							<div class="form-group temporary_badge">
-								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="count-day" placeholder="Количество пропусков" readonly>
+								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="count-day" placeholder="Кількість перепусток" readonly>
 								<div class="form-group goods goods_item-1">
 									<div class="title-block text-left">
-										<h4 class="title_goods-block font-weight-bold text-uppercase">СОТРУДНИКИ</h4>
+										<h4 class="title_goods-block font-weight-bold text-uppercase">Працівники</h4>
 									</div>
 								</div>
 								<div class="form-group goods goods_item-1">
@@ -287,37 +292,37 @@
 								<div data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap text-left">
 
 									<div class="form-group form-inline col-6 pl-2">
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 1</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 2</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 3</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 4</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 5</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 6</span>
@@ -325,37 +330,37 @@
 										</div>
 									</div>
 									<div class="form-group form-inline col-6 p-0">
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 7</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 8</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox" checked="checked">
 												<span>Поверх 9</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 10</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 11</span>
 											</label>
 										</div>
-										<div class="col-8 p-0">
+										<div class="col-12 col-md-8 p-0">
 											<label class="justify-content-start text-left">
 												<input class="checkbox" type="checkbox">
 												<span>Поверх 12</span>
@@ -373,44 +378,49 @@
 									<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
 										<input type="submit">
 										<span class="form_upload_plus">+</span>
-										<span class="form_upload_text">ДОБАВИТЬ СОТРУДНИКА</span>
+										<span class="form_upload_text">Додати працівника</span>
 									</label>
 								</div>
 							</div>
 							<div class="form-group territory_badge">
 
-								<div data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap date_times text-left">
-									<div class="title-block text-left col-12 pl-0">
-										<h4 class="title text-left">Время проведения</h4>
-									</div>
-									<label for="datepicker11" class="form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datepicker11" class="form-control col-10 underlined mb-0" placeholder="Вiд 2017/03/15">
-										<span class="col-1 fa fa-calendar"></span>
-									</label>
-									<i class="col-1"></i>
-									<label for="datepicker12" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datepicker12" max="15" class="form-control col-10 underlined mb-0" placeholder="До 2017/03/15">
-										<span class="col-2 fa fa-calendar"></span>
-									</label>
-									<i class="col-1"></i>
-									<label for="datetimepicker11" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datetimepicker11" class="form-control col-10 underlined text-center mb-0" placeholder="11:30">
-										<span class="col-2 fa fa-clock-o"></span>
-									</label>
-									<i class="col-1"></i>
-									<label for="datetimepicker12" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datetimepicker12" class="form-control col-10 underlined text-center mb-0" placeholder="11:30">
-										<span class="col-2 fa fa-clock-o"></span>
-									</label>
-
+								<div class="title-block text-left col-12 pl-0">
+									<h4 class="title text-left">Час проведення</h4>
 								</div>
+
+								<!--DATE-TIME-PICKER-RANGE-->
+								<div id="basicDatepicker-1" data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap date_times text-left">
+									<div class="start__daretime col-12 col-md-5 p-0">
+										<label for="datepicker1" class="form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datepicker1" class="date start form-control col-10 underlined text-center mb-0" placeholder="Вiд 15/11/2017">
+											<span class="col-2 fa fa-calendar"></span>
+										</label>
+										<label for="datetimepicker1" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datetimepicker1" class="time start form-control col-11 underlined text-center mb-0" placeholder="11:30">
+											<span class="col-1 fa fa-clock-o"></span>
+										</label>
+									</div>
+									<i class="col-12 col-md-1"></i>
+									<div class="end__daretime col-12 col-md-5 p-0">
+										<label for="datepicker2" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datepicker2" class="date end form-control col-11 underlined text-center mb-0" placeholder="До 15/11/2017">
+											<span class="col-1 fa fa-calendar"></span>
+										</label>
+										<label for="datetimepicker2" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datetimepicker2" class="time end form-control col-11 underlined text-center mb-0" placeholder="11:30">
+											<span class="col-1 fa fa-clock-o"></span>
+										</label>
+									</div>
+								</div>
+								<!--DATE-TIME-PICKER-RANGE-->
+
 								<select size="1" data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="" class="form-control form-control-lg underlined" required>
 									<option value="1">Вид робіт*</option>
 									<option value="2">оформлення вітрин</option>
 									<option value="3">дрібний ремонт</option>
 								</select>
 								<div class="title-block text-left">
-									<h4 class="title text-left text-uppercase">Маршрут переходів</h4>
+									<h4 class="title text-left text-uppercase">Зображення маршруту</h4>
 								</div>
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="walked_plane" placeholder="Комментар" >
 								<div class="form-group form-group-upload text-left">
@@ -418,8 +428,8 @@
 										<input type="file">
 										<span class="form_upload_plus">+</span>
 										<span class="form_upload_text">
-											<span class="form_upload_tip">Изображение прохода</span>
-											<span class="form_upload_format">Файлы в формате jpg</span>
+											<span class="form_upload_tip">Зображення маршруту</span>
+											<span class="form_upload_format">Файли у форматі jpg</span>
 										</span>
 									</label>
 								</div>
@@ -438,7 +448,7 @@
 									<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
 										<input type="submit">
 										<span class="form_upload_plus">+</span>
-										<span class="form_upload_text">ДОБАВИТЬ СОТРУДНИКА</span>
+										<span class="form_upload_text">Додати працівника</span>
 									</label>
 								</div>
 							</div>
@@ -458,38 +468,43 @@
 										</span>
 									</label>
 								</div>
-								<div data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap date_times text-left">
+
+								<!--DATE-TIME-PICKER-RANGE-->
+								<div id="basicDatepicker-2" data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap date_times text-left">
 									<div class="title-block text-left col-12 pl-0">
 										<h4 class="title text-left">Час проведення</h4>
 									</div>
-									<label for="datepicker11" class="form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datepicker11" class="form-control col-10 underlined mb-0" placeholder="З 2017/03/15">
-										<span class="col-1 fa fa-calendar"></span>
-									</label>
-									<i class="col-1"></i>
-									<label for="datepicker12" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datepicker12" class="form-control col-10 underlined mb-0" placeholder="По 2017/03/15">
-										<span class="col-2 fa fa-calendar"></span>
-									</label>
-									<i class="col-1"></i>
-									<label for="datetimepicker11" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datetimepicker11" class="form-control col-10 underlined text-center mb-0" placeholder="11:30">
-										<span class="col-2 fa fa-clock-o"></span>
-									</label>
-									<i class="col-1"></i>
-									<label for="datetimepicker12" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datetimepicker12" class="form-control col-10 underlined text-center mb-0" placeholder="11:30">
-										<span class="col-2 fa fa-clock-o"></span>
-									</label>
-
+									<div class="start__daretime col-12 col-md-5 p-0">
+										<label for="datepicker1" class="form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datepicker1" class="date start form-control col-11 underlined text-center mb-0" placeholder="Вiд 15/11/2017">
+											<span class="col-1 fa fa-calendar"></span>
+										</label>
+										<label for="datetimepicker1" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datetimepicker1" class="time start form-control col-11 underlined text-center mb-0" placeholder="11:30">
+											<span class="col-1 fa fa-clock-o"></span>
+										</label>
+									</div>
+									<i class="col-12 col-md-1"></i>
+									<div class="end__daretime col-12 col-md-5 p-0">
+										<label for="datepicker2" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datepicker2" class="date end form-control col-11 underlined text-center mb-0" placeholder="До 15/11/2017">
+											<span class="col-1 fa fa-calendar"></span>
+										</label>
+										<label for="datetimepicker2" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datetimepicker2" class="time end form-control col-11 underlined text-center mb-0" placeholder="11:30">
+											<span class="col-1 fa fa-clock-o"></span>
+										</label>
+									</div>
 								</div>
+								<!--DATE-TIME-PICKER-RANGE-->
+
 								<select size="1" data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="" class="form-control form-control-lg underlined" required>
 									<option value="1">Вид робіт*</option>
 									<option value="2">оформлення вітрин</option>
 									<option value="3">дрібний ремонт</option>
 								</select>
 								<div class="title-block text-left">
-									<h4 class="title text-left text-uppercase">Маршрут переходів</h4>
+									<h4 class="title text-left text-uppercase">Зображення маршруту</h4>
 								</div>
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="walked_plane" placeholder="Комментар" >
 								<div class="form-group form-group-upload text-left">
@@ -497,8 +512,8 @@
 										<input type="file">
 										<span class="form_upload_plus">+</span>
 										<span class="form_upload_text">
-											<span class="form_upload_tip">Загрузите изображение маршрута</span>
-											<span class="form_upload_format">Файл в формате jpg</span>
+											<span class="form_upload_tip">Завантажте зображення маршруту</span>
+											<span class="form_upload_format">Файл у форматi jpg</span>
 										</span>
 									</label>
 								</div>
@@ -517,27 +532,27 @@
 									<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
 										<input type="submit">
 										<span class="form_upload_plus">+</span>
-										<span class="form_upload_text">ДОБАВИТЬ СОТРУДНИКА</span>
+										<span class="form_upload_text">Додати працівника</span>
 									</label>
 								</div>
 							</div>
 							<div class="form-group add_inform">
-								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="walked_plane" placeholder="Комментарий" >
+								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="walked_plane" placeholder="Коментар" >
 								<div class="form-group goods goods_item-1">
 									<div class="title-block text-left pt-3 pb-0">
 										<h4 class="title_goods-block font-weight-bold">Рекламний текст</h4>
 									</div>
 								</div>
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control underlined text-left title_ua" placeholder="Рекламний текст Заголовок (укр)">
-								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control underlined text-left title_ru" placeholder="Рекламний текст Заголовок (рус)">
+								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control underlined text-left title_ru" placeholder="Рекламний текст Заголовок (рос)">
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control underlined text-left title_en" placeholder="Рекламний текст Заголовок (англ)">
 								<textarea data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="" cols="30" rows="3" class="form-control underlined text-left title_ua" placeholder="Рекламний текст Текст (укр)"></textarea>
-								<textarea data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="" cols="30" rows="3" class="form-control underlined text-left title_ru" placeholder="Рекламний текст Текст (рус)"></textarea>
+								<textarea data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="" cols="30" rows="3" class="form-control underlined text-left title_ru" placeholder="Рекламний текст Текст (рос)"></textarea>
 								<textarea data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="" cols="30" rows="3" class="form-control underlined text-left mb-5 title_en" placeholder="Рекламний текст Текст (англ)"></textarea>
 								<div data-toggle="tooltip" data-placement="bottom" title="Пiдказка" class="form-group form-inline text-left">
-									<h4 class="form-inline title col-6">Бажана дата публікації</h4>
+									<h4 class="form-inline title col-12 col-md-6">Бажана дата публікації</h4>
 
-									<label for="datepicker_add_inform" class="form-inline flex-nowrap border-bottom-1 col-4 align-bottom mb-3">
+									<label for="datepicker_add_inform" class="form-inline flex-nowrap border-bottom-1 col-12 col-md-4 align-bottom mb-3">
 										<input type="text" id="datepicker_add_inform" class="form-control col-10 underlined mb-0" placeholder="2017/03/15">
 										<span class="col-1 fa fa-calendar"></span>
 									</label>
@@ -552,18 +567,17 @@
 										<span class="form_upload_plus">+</span>
 										<span class="form_upload_text">
 											<span class="form_upload_tip">Макет реклами </span>
-											<span class="form_upload_format">Файл в форматi jpg</span>
+											<span class="form_upload_format">Файл у форматi jpg</span>
 										</span>
 									</label>
 								</div>
-								<a href="#" class="btn btn_type_e  mx-auto my-0 ">Скачать PDF правила размещения
-										информации на сайте
+								<a href="#" class="btn btn_type_e  mx-auto my-0 ">Завантажити PDF правила розміщення інформації на сайті
 								</a>
 							</div>
 							<div class="form-group add_in_magazine">
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="text" class="form-control form-control-lg underlined" data-name="walked_plane" placeholder="Коментар" >
 								<div class="title-block text-left">
-									<h4 class="title text-left text-uppercase">Завантажено: рекламный макет1.jpg <i class="fa fa-close"></i></h4>
+									<h4 class="title text-left text-uppercase">Завантажено: рекламний макет1.jpg <i class="fa fa-close"></i></h4>
 								</div>
 								<div class="form-group form-group-upload text-left">
 									<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
@@ -571,7 +585,7 @@
 										<span class="form_upload_plus">+</span>
 										<span class="form_upload_text">
 											<span class="form_upload_tip">Макет реклами</span>
-											<span class="form_upload_format">Файл в форматi jpg</span>
+											<span class="form_upload_format">Файл у форматi jpg</span>
 										</span>
 									</label>
 								</div>
@@ -587,7 +601,7 @@
 										<span class="form_upload_plus">+</span>
 										<span class="form_upload_text">
 											<span class="form_upload_tip">Макет реклами</span>
-											<span class="form_upload_format">Файл в форматi jpg</span>
+											<span class="form_upload_format">Файл у форматi jpg</span>
 										</span>
 									</label>
 								</div>
@@ -598,19 +612,25 @@
 								<div class="title-block text-left col-12 pl-0">
 									<h4 class="title text-left">Період акції</h4>
 								</div>
-								<div data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap date_times text-left">
-									<label for="datepicker21" class="form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datepicker21" class="form-control col-10 underlined mb-0" placeholder="Вiд 2017/03/15">
-										<span class="col-1 fa fa-calendar"></span>
-									</label>
-									<i class="col-1"></i>
-									<label for="datepicker22" class=" form-inline flex-nowrap border-bottom-1 col-5 align-bottom mb-3 pl-0">
-										<input type="text" id="datepicker22" class="form-control col-10 underlined mb-0" placeholder="До 2017/03/15">
-										<span class="col-2 fa fa-calendar"></span>
-									</label>
-									<i class="col-2"></i>
 
+								<!--DATE-PICKER-RANGE-->
+								<div id="basicDatepicker-3" data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap date_times text-left">
+									<div class="start__daretime col-12 col-md-5 p-0">
+										<label for="datepicker1" class="form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datepicker1" class="date start form-control col-10 underlined text-center mb-0" placeholder="Вiд 15/11/2017">
+											<span class="col-2 fa fa-calendar"></span>
+										</label>
+									</div>
+									<i class="col-12 col-md-1"></i>
+									<div class="end__daretime col-12 col-md-5 p-0">
+										<label for="datepicker2" class=" form-inline flex-nowrap border-bottom-1 align-bottom mb-3 pl-0">
+											<input type="text" id="datepicker2" class="date end form-control col-10 underlined text-center mb-0" placeholder="До 15/11/2017">
+											<span class="col-2 fa fa-calendar"></span>
+										</label>
+									</div>
 								</div>
+								<!--DATE-PICKER-RANGE-->
+
 								<div class="form-group form-group-upload text-left">
 									<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
 										<input type="file">
@@ -631,26 +651,29 @@
 									<span class="form_upload_plus">+</span>
 									<span class="form_upload_text">
 											<span class="form_upload_tip">Схема расположения магазина*</span>
-											<span class="form_upload_format">Файл в формате jpg</span>
+											<span class="form_upload_format">Файл у формате jpg</span>
 										</span>
 								</label>
 							</div>
 							<select size="1" data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="communication_service" class="form-control form-control-lg underlined "  required>
 								<option value="1">Послуга зв'язку</option>
-								<option value="2">Телефония</option>
-								<option value="3">Интернет</option>
-								<option value="4">Канал передачи данных</option>
+								<option value="2">Телефонія</option>
+								<option value="3">Інтернет</option>
+								<option value="4">Канал передачі даних</option>
 							</select>
 							<div class="form-group telephony">
 								<div class="title-block text-left">
-									<h3 class="title text-left text-uppercase">Телефония</h3>
+									<h3 class="title text-left text-uppercase">Телефонія</h3>
 								</div>
 								<select size="1" data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="operator" class="form-control form-control-lg underlined" required>
 									<option value="1">Оператор зв’язку</option>
-									<option value="2">Киевстар</option>
+									<option value="2">Київстар</option>
 									<option value="3">Укртелеком</option>
 									<option value="4">Датагруп</option>
-									<option value="5">...</option>
+									<option value="5">Вега (Фарлеп, Оптима)</option>
+									<option value="6">УНТК</option>
+									<option value="7">ВОЛЗ</option>
+									<option value="8">Інший</option>
 								</select>
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="number" class="form-control form-control-lg underlined mb-3" data-name="walked_plane" placeholder="Кількість ліній" >
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="number" class="form-control form-control-lg underlined mb-3" data-name="walked_plane" placeholder="Швидкість доступу, Мбит/с" >
@@ -664,14 +687,17 @@
 							</div>
 							<div class="form-group internet">
 								<div class="title-block text-left">
-									<h3 class="title text-left text-uppercase">Интернет</h3>
+									<h3 class="title text-left text-uppercase">Інтернет</h3>
 								</div>
 								<select size="1" data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="operator" class="form-control form-control-lg underlined" required>
 									<option value="1">Оператор зв’язку</option>
-									<option value="2">Киевстар</option>
+									<option value="2">Київстар</option>
 									<option value="3">Укртелеком</option>
 									<option value="4">Датагруп</option>
-									<option value="5">...</option>
+									<option value="5">Вега (Фарлеп, Оптима)</option>
+									<option value="6">УНТК</option>
+									<option value="7">ВОЛЗ</option>
+									<option value="8">Інший</option>
 								</select>
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="number" class="form-control form-control-lg underlined mb-3" data-name="walked_plane" placeholder="Кількість ліній" >
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="number" class="form-control form-control-lg underlined mb-3" data-name="walked_plane" placeholder="Швидкість доступу, Мбит/с" >
@@ -685,14 +711,17 @@
 							</div>
 							<div class="form-group data_channel">
 								<div class="title-block text-left">
-									<h3 class="title text-left text-uppercase">Передачи данных</h3>
+									<h3 class="title text-left text-uppercase">Канал передачі даних</h3>
 								</div>
 								<select size="1" data-toggle="tooltip" data-placement="bottom" title="Пiдказка" name="" id="operator" class="form-control form-control-lg underlined" required>
 									<option value="1">Оператор зв’язку</option>
-									<option value="2">Киевстар</option>
+									<option value="2">Київстар</option>
 									<option value="3">Укртелеком</option>
 									<option value="4">Датагруп</option>
-									<option value="5">...</option>
+									<option value="5">Вега (Фарлеп, Оптима)</option>
+									<option value="6">УНТК</option>
+									<option value="7">ВОЛЗ</option>
+									<option value="8">Інший</option>
 								</select>
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="number" class="form-control form-control-lg underlined mb-3" data-name="walked_plane" placeholder="Кількість ліній" >
 								<input data-toggle="tooltip" data-placement="bottom" title="Пiдказка" type="number" class="form-control form-control-lg underlined mb-3" data-name="walked_plane" placeholder="Швидкість доступу, Мбит/с" >
@@ -709,7 +738,7 @@
 								<label data-toggle="tooltip" data-placement="bottom" title="Пiдказка">
 									<input type="submit">
 									<span class="form_upload_plus">+</span>
-									<span class="form_upload_text">ДОБАВИТЬ УСЛУГУ СВЯЗИ</span>
+									<span class="form_upload_text">Додати послугу зв'язку</span>
 								</label>
 							</div>
 
@@ -717,7 +746,7 @@
 						<div class="append_form append_form_OTHER">
 							<div class="form-group">
 								<div class="title-block text-left">
-									<h3 class="title text-left text-uppercase">Выберите тип заявки</h3>
+									<h3 class="title text-left text-uppercase">Оберіть тип заявки</h3>
 								</div>
 
 								<div data-toggle="tooltip" data-placement="right" title="Пiдказка" class="form-group form-inline justify-content-md-start flex-md-wrap text-left">
@@ -726,13 +755,13 @@
 										<div class="col-8 text-left justify-content-start p-0">
 											<label class=" text-left justify-content-start">
 												<input class="radio" name="other" type="radio" checked>
-												<span>Жалоба</span>
+												<span>Скарга</span>
 											</label>
 										</div>
 										<div class="col-8 text-left justify-content-start p-0">
 											<label class=" text-left justify-content-start">
 												<input class="radio" name="other"  type="radio" >
-												<span>Предложение</span>
+												<span>Пропозиція</span>
 											</label>
 										</div>
 									</div>
@@ -746,7 +775,7 @@
 
 				</div>
 				<div class="modal-footer">
-					<button class="btn btn_type_a" data-dismiss="modal">Зберегти</button>
+					<button class="btn btn_type_a mb-3 mb-md-0" data-dismiss="modal">Зберегти</button>
 					<button  type="submit" class="btn btn_type_b">Вiдправити</button>
 				</div>
 				<div class="modal-footer form-group modal-after-footer">

@@ -62,6 +62,9 @@
   background: transparent;
   margin-bottom: 0;
   line-height: 1.2rem;
+	@include media-down(sm) {
+		max-width: 100%;
+	}
   &:hover{
     color: $type-a-text;
     border: 1px solid $type-a-text-hover;
@@ -80,6 +83,9 @@
   background: transparent;
   margin-bottom: 0;
   line-height: 1.2rem;
+	@include media-down(sm) {
+		max-width: 100%;
+	}
   &:hover{
     color: $color-text-disable;
     background: lighten($type-b-border, 10%);
