@@ -1,6 +1,3 @@
-# ModularAdmin: Free Bootstrap 4 Dashboard Theme <br> HTML version
-
-
 ## Getting Started
 
 ### 1. Build the project
