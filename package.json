@@ -13,7 +13,7 @@
   },
   "homepage": "http://95.164.52.226:3001/Yuriy/guliver-pa",
   "dependencies": {
-    "bower": "^1.8.2",
+    "bower": "^1.8.8",
     "gulp-cli": "^1.4.0",
     "gulp-install": "^1.1.0",
     "gulp-sourcemaps": "^2.6.1",
